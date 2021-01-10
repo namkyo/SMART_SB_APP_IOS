@@ -9,13 +9,19 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    var window: UIWindow?
+    let bgTaskView = UIView()
+    /**
+     앱 초기설정
+     */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // 응용 프로그램 시작 후 사용자 지정 지점을 재정의합니다.
+        UIApplication.shared.applicationIconBadgeNumber = 0 //알림배지 초기화
+        
         return true
     }
+    
+    
 
     // MARK: UISceneSession Lifecycle
 

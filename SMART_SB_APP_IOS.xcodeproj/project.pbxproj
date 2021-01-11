@@ -15,23 +15,46 @@
 		E61EA0A625AABCF200653273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61EA0A525AABCF200653273 /* Assets.xcassets */; };
 		E61EA0A925AABCF200653273 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA0A725AABCF200653273 /* LaunchScreen.storyboard */; };
 		E61EA0CD25AAC09A00653273 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA0CC25AAC09A00653273 /* SplashVC.swift */; };
-		E61EA0D625AAC12900653273 /* img in Resources */ = {isa = PBXBuildFile; fileRef = E61EA0D225AAC12700653273 /* img */; };
 		E61EA0D725AAC12900653273 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA0D325AAC12800653273 /* Function.swift */; };
 		E61EA0D825AAC12900653273 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA0D425AAC12800653273 /* Configuration.swift */; };
 		E61EA0D925AAC12900653273 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA0D525AAC12900653273 /* String.swift */; };
 		E61EA0E025AAC24600653273 /* Appdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA0DF25AAC24600653273 /* Appdata.swift */; };
 		E61EA0E325AAC24900653273 /* NativeBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA0E225AAC24900653273 /* NativeBridge.swift */; };
 		E61EA0EB25AAC37800653273 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA0EA25AAC37800653273 /* Splash.storyboard */; };
-		E61EA0FC25AAC98800653273 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA0FB25AAC98800653273 /* Test.storyboard */; };
 		E61EA0FF25AAC99600653273 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA0FE25AAC99600653273 /* TestVC.swift */; };
-		E61EA11925AB0EB800653273 /* libEversafeKeypad_Universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA10D25AB0EB600653273 /* libEversafeKeypad_Universal.a */; };
-		E61EA11D25AB0FD700653273 /* PACECaptureNRecog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA11C25AB0FD700653273 /* PACECaptureNRecog.framework */; };
-		E61EA12025AB0FE600653273 /* dat in Resources */ = {isa = PBXBuildFile; fileRef = E61EA11F25AB0FE600653273 /* dat */; };
-		E61EA12525AB110100653273 /* libSecureData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12425AB110100653273 /* libSecureData.a */; };
-		E61EA13025AB117200653273 /* SafetokenBiometric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12D25AB117100653273 /* SafetokenBiometric.framework */; };
-		E61EA13125AB117200653273 /* SafetokenPattern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12E25AB117100653273 /* SafetokenPattern.framework */; };
-		E61EA13225AB117200653273 /* Safetoken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12F25AB117200653273 /* Safetoken.framework */; };
+		E6AF5AA625ABDD590073D3F2 /* Safetoken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12F25AB117200653273 /* Safetoken.framework */; };
+		E6AF5AA725ABDD590073D3F2 /* Safetoken.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12F25AB117200653273 /* Safetoken.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6AF5AA925ABDD5C0073D3F2 /* SafetokenBiometric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12D25AB117100653273 /* SafetokenBiometric.framework */; };
+		E6AF5AAA25ABDD5C0073D3F2 /* SafetokenBiometric.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12D25AB117100653273 /* SafetokenBiometric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6AF5AAB25ABDD5E0073D3F2 /* SafetokenPattern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12E25AB117100653273 /* SafetokenPattern.framework */; };
+		E6AF5AAC25ABDD5E0073D3F2 /* SafetokenPattern.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12E25AB117100653273 /* SafetokenPattern.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6AF5AAD25ABDD680073D3F2 /* PACECaptureNRecog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA11C25AB0FD700653273 /* PACECaptureNRecog.framework */; };
+		E6AF5AAE25ABDD680073D3F2 /* PACECaptureNRecog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA11C25AB0FD700653273 /* PACECaptureNRecog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6AF5AB825ABE1DA0073D3F2 /* idcard_kor_one.wgt in Resources */ = {isa = PBXBuildFile; fileRef = E6AF5AB525ABE1DA0073D3F2 /* idcard_kor_one.wgt */; };
+		E6AF5AB925ABE1DA0073D3F2 /* asc.wgt in Resources */ = {isa = PBXBuildFile; fileRef = E6AF5AB625ABE1DA0073D3F2 /* asc.wgt */; };
+		E6AF5ABA25ABE1DA0073D3F2 /* hang.rec in Resources */ = {isa = PBXBuildFile; fileRef = E6AF5AB725ABE1DA0073D3F2 /* hang.rec */; };
+		E6AF5AC025ABE2EB0073D3F2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AF5ABF25ABE2EB0073D3F2 /* AVFoundation.framework */; };
+		E6AF5B2D25AC09D70073D3F2 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6AF5B2C25AC09D70073D3F2 /* Test.storyboard */; };
+		E6AF5B5C25AC11AE0073D3F2 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF5B5B25AC11AE0073D3F2 /* StoryboardHelper.swift */; };
+		E6AF5B5E25AC12970073D3F2 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF5B5D25AC12970073D3F2 /* UIApplication.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E6AF5AA825ABDD590073D3F2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E6AF5AAA25ABDD5C0073D3F2 /* SafetokenBiometric.framework in Embed Frameworks */,
+				E6AF5AA725ABDD590073D3F2 /* Safetoken.framework in Embed Frameworks */,
+				E6AF5AAE25ABDD680073D3F2 /* PACECaptureNRecog.framework in Embed Frameworks */,
+				E6AF5AAC25ABDD5E0073D3F2 /* SafetokenPattern.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		114B1F2EE5F890ED314855BC /* Pods_SMART_SB_APP_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMART_SB_APP_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,14 +69,12 @@
 		E61EA0A825AABCF200653273 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E61EA0AA25AABCF200653273 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E61EA0CC25AAC09A00653273 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
-		E61EA0D225AAC12700653273 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		E61EA0D325AAC12800653273 /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
 		E61EA0D425AAC12800653273 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		E61EA0D525AAC12900653273 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E61EA0DF25AAC24600653273 /* Appdata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appdata.swift; sourceTree = "<group>"; };
 		E61EA0E225AAC24900653273 /* NativeBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBridge.swift; sourceTree = "<group>"; };
 		E61EA0EA25AAC37800653273 /* Splash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
-		E61EA0FB25AAC98800653273 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 		E61EA0FE25AAC99600653273 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		E61EA10225AB0EB300653273 /* ESDefaultNumericKeypadMagAppearanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDefaultNumericKeypadMagAppearanceManager.h; sourceTree = "<group>"; };
 		E61EA10325AB0EB400653273 /* ESKeypadAppearenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESKeypadAppearenceManager.h; sourceTree = "<group>"; };
@@ -79,7 +100,6 @@
 		E61EA11725AB0EB800653273 /* ESKeyMagViewAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESKeyMagViewAlign.h; sourceTree = "<group>"; };
 		E61EA11825AB0EB800653273 /* ESKeypadMagAppearanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESKeypadMagAppearanceManager.h; sourceTree = "<group>"; };
 		E61EA11C25AB0FD700653273 /* PACECaptureNRecog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PACECaptureNRecog.framework; sourceTree = "<group>"; };
-		E61EA11F25AB0FE600653273 /* dat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dat; sourceTree = "<group>"; };
 		E61EA12425AB110100653273 /* libSecureData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSecureData.a; sourceTree = "<group>"; };
 		E61EA12825AB111200653273 /* SecureData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecureData.h; sourceTree = "<group>"; };
 		E61EA12925AB111200653273 /* ProtectedData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtectedData.h; sourceTree = "<group>"; };
@@ -88,6 +108,16 @@
 		E61EA12D25AB117100653273 /* SafetokenBiometric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SafetokenBiometric.framework; sourceTree = "<group>"; };
 		E61EA12E25AB117100653273 /* SafetokenPattern.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SafetokenPattern.framework; sourceTree = "<group>"; };
 		E61EA12F25AB117200653273 /* Safetoken.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Safetoken.framework; sourceTree = "<group>"; };
+		E6AF5AAF25ABDE0D0073D3F2 /* SMART_SB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMART_SB-Bridging-Header.h"; sourceTree = "<group>"; };
+		E6AF5AB025ABE03F0073D3F2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E6AF5AB525ABE1DA0073D3F2 /* idcard_kor_one.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; name = idcard_kor_one.wgt; path = SMART_SB_APP_IOS/Lib/face_ocr/dat2/idcard_kor_one.wgt; sourceTree = SOURCE_ROOT; };
+		E6AF5AB625ABE1DA0073D3F2 /* asc.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; name = asc.wgt; path = SMART_SB_APP_IOS/Lib/face_ocr/dat2/asc.wgt; sourceTree = SOURCE_ROOT; };
+		E6AF5AB725ABE1DA0073D3F2 /* hang.rec */ = {isa = PBXFileReference; lastKnownFileType = file; name = hang.rec; path = SMART_SB_APP_IOS/Lib/face_ocr/dat2/hang.rec; sourceTree = SOURCE_ROOT; };
+		E6AF5ABB25ABE2E00073D3F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E6AF5ABF25ABE2EB0073D3F2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E6AF5B2C25AC09D70073D3F2 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		E6AF5B5B25AC11AE0073D3F2 /* StoryboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		E6AF5B5D25AC12970073D3F2 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,13 +125,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E61EA11925AB0EB800653273 /* libEversafeKeypad_Universal.a in Frameworks */,
-				E61EA11D25AB0FD700653273 /* PACECaptureNRecog.framework in Frameworks */,
-				E61EA13125AB117200653273 /* SafetokenPattern.framework in Frameworks */,
-				E61EA12525AB110100653273 /* libSecureData.a in Frameworks */,
-				E61EA13025AB117200653273 /* SafetokenBiometric.framework in Frameworks */,
-				E61EA13225AB117200653273 /* Safetoken.framework in Frameworks */,
+				E6AF5AC025ABE2EB0073D3F2 /* AVFoundation.framework in Frameworks */,
+				E6AF5AAB25ABDD5E0073D3F2 /* SafetokenPattern.framework in Frameworks */,
+				E6AF5AA925ABDD5C0073D3F2 /* SafetokenBiometric.framework in Frameworks */,
+				E6AF5AA625ABDD590073D3F2 /* Safetoken.framework in Frameworks */,
 				5A6A2DB829BAEDE114DDE80E /* Pods_SMART_SB_APP_IOS.framework in Frameworks */,
+				E6AF5AAD25ABDD680073D3F2 /* PACECaptureNRecog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +177,7 @@
 				E61EA09E25AABCF100653273 /* SceneDelegate.swift */,
 				E61EA0A725AABCF200653273 /* LaunchScreen.storyboard */,
 				E61EA0A525AABCF200653273 /* Assets.xcassets */,
+				E6AF5AAF25ABDE0D0073D3F2 /* SMART_SB-Bridging-Header.h */,
 				E61EA0AA25AABCF200653273 /* Info.plist */,
 			);
 			path = SMART_SB_APP_IOS;
@@ -158,8 +188,9 @@
 			children = (
 				E61EA0D425AAC12800653273 /* Configuration.swift */,
 				E61EA0D325AAC12800653273 /* Function.swift */,
-				E61EA0D225AAC12700653273 /* img */,
 				E61EA0D525AAC12900653273 /* String.swift */,
+				E6AF5B5B25AC11AE0073D3F2 /* StoryboardHelper.swift */,
+				E6AF5B5D25AC12970073D3F2 /* UIApplication.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -229,8 +260,8 @@
 		E61EA0FA25AAC97900653273 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				E61EA0FB25AAC98800653273 /* Test.storyboard */,
 				E61EA0FE25AAC99600653273 /* TestVC.swift */,
+				E6AF5B2C25AC09D70073D3F2 /* Test.storyboard */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -268,7 +299,7 @@
 		E61EA11B25AB0FC500653273 /* face_ocr */ = {
 			isa = PBXGroup;
 			children = (
-				E61EA11F25AB0FE600653273 /* dat */,
+				E6AF5AB425ABE1D40073D3F2 /* dat */,
 				E61EA11C25AB0FD700653273 /* PACECaptureNRecog.framework */,
 			);
 			path = face_ocr;
@@ -312,9 +343,22 @@
 			path = eightbyte;
 			sourceTree = "<group>";
 		};
+		E6AF5AB425ABE1D40073D3F2 /* dat */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF5AB625ABE1DA0073D3F2 /* asc.wgt */,
+				E6AF5AB725ABE1DA0073D3F2 /* hang.rec */,
+				E6AF5AB525ABE1DA0073D3F2 /* idcard_kor_one.wgt */,
+			);
+			path = dat;
+			sourceTree = "<group>";
+		};
 		F2E6DD7DE1BD394F2BA79383 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6AF5ABF25ABE2EB0073D3F2 /* AVFoundation.framework */,
+				E6AF5ABB25ABE2E00073D3F2 /* UIKit.framework */,
+				E6AF5AB025ABE03F0073D3F2 /* CoreVideo.framework */,
 				114B1F2EE5F890ED314855BC /* Pods_SMART_SB_APP_IOS.framework */,
 			);
 			name = Frameworks;
@@ -332,6 +376,7 @@
 				E61EA09625AABCF100653273 /* Frameworks */,
 				E61EA09725AABCF100653273 /* Resources */,
 				C38DA95B1E9A734FEC4DF09E /* [CP] Embed Pods Frameworks */,
+				E6AF5AA825ABDD590073D3F2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -379,12 +424,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E61EA0FC25AAC98800653273 /* Test.storyboard in Resources */,
-				E61EA12025AB0FE600653273 /* dat in Resources */,
-				E61EA0D625AAC12900653273 /* img in Resources */,
 				E61EA0A925AABCF200653273 /* LaunchScreen.storyboard in Resources */,
 				E61EA0A625AABCF200653273 /* Assets.xcassets in Resources */,
+				E6AF5AB825ABE1DA0073D3F2 /* idcard_kor_one.wgt in Resources */,
+				E6AF5AB925ABE1DA0073D3F2 /* asc.wgt in Resources */,
 				E61EA0EB25AAC37800653273 /* Splash.storyboard in Resources */,
+				E6AF5B2D25AC09D70073D3F2 /* Test.storyboard in Resources */,
+				E6AF5ABA25ABE1DA0073D3F2 /* hang.rec in Resources */,
 				E61EA0A425AABCF100653273 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,12 +484,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6AF5B5E25AC12970073D3F2 /* UIApplication.swift in Sources */,
 				E61EA0FF25AAC99600653273 /* TestVC.swift in Sources */,
 				E61EA0D825AAC12900653273 /* Configuration.swift in Sources */,
 				E61EA0CD25AAC09A00653273 /* SplashVC.swift in Sources */,
 				E61EA0A125AABCF100653273 /* MainVC.swift in Sources */,
 				E61EA0E025AAC24600653273 /* Appdata.swift in Sources */,
 				E61EA09D25AABCF100653273 /* AppDelegate.swift in Sources */,
+				E6AF5B5C25AC11AE0073D3F2 /* StoryboardHelper.swift in Sources */,
 				E61EA0E325AAC24900653273 /* NativeBridge.swift in Sources */,
 				E61EA0D925AAC12900653273 /* String.swift in Sources */,
 				E61EA09F25AABCF100653273 /* SceneDelegate.swift in Sources */,
@@ -524,7 +572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -579,7 +627,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -596,6 +644,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/face_ocr",
@@ -611,10 +660,12 @@
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/cert/lib",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.smart.sb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -625,6 +676,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/face_ocr",
@@ -640,10 +692,12 @@
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/cert/lib",
 				);
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.smart.sb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};

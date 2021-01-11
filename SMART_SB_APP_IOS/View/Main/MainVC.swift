@@ -30,6 +30,14 @@ class MainVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMess
         webView.uiDelegate = self
         webView.navigationDelegate = self
         self.view.addSubview(webView)
+        
+        //let storyBoard=UIStoryboard(name: "Test.storyboard", bundle: nil)
+        //let vcName=storyBoard.instantiateViewController(withIdentifier: "TestVC") as! TestVC
+        //vcName.modalTransitionStyle = .coverVertical
+        //self.present(vcName, animated: true, completion: nil)
+        let vc = TestVC.instantiate(storyboard: "Test")
+        let topView = UIApplication.topViewController()
+        topView?.present(vc, animated: true, completion: nil)
     }
     //컨트롤러 생성자
     override func viewDidLoad() {

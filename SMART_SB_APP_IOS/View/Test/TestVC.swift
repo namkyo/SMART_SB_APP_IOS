@@ -9,11 +9,11 @@ import UIKit
 
 class TestVC: UIViewController {
     override func loadView() {
-        print("loadView")
+        print("TestVC loadView")
         
     }
     override func viewDidLoad() {
-        print("viewDidLoad")
+        print("TestVC viewDidLoad")
         makeBtn()
         makeBtnLayout(btnArr: btnArr)
     }
@@ -21,15 +21,15 @@ class TestVC: UIViewController {
     //뷰 생성 끝나고
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        print("viewDidAppear")
+        print("TestVC viewDidAppear")
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
-        print("viewWillDisappear")
+        print("TestVC viewWillDisappear")
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
-        print("viewDidDisappear")
+        print("TestVC viewDidDisappear")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -29,15 +29,18 @@ class MainVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMess
         webView = WKWebView(frame: self.view.frame, configuration: config)
         webView.uiDelegate = self
         webView.navigationDelegate = self
-        self.view.addSubview(webView)
         
-        //let storyBoard=UIStoryboard(name: "Test.storyboard", bundle: nil)
-        //let vcName=storyBoard.instantiateViewController(withIdentifier: "TestVC") as! TestVC
+        
+        
+        self.view.addSubview(webView)
+        print("화면전환");
+        let storyBoard=UIStoryboard(name: "Test", bundle: nil)
+        let vcName=storyBoard.instantiateViewController(withIdentifier: "TestVC") as! TestVC
         //vcName.modalTransitionStyle = .coverVertical
+        //화면 전환 애니메이션을 설정합니다.
+        vcName.modalTransitionStyle = UIModalTransitionStyle.coverVertical
         //self.present(vcName, animated: true, completion: nil)
-        let vc = TestVC.instantiate(storyboard: "Test")
-        let topView = UIApplication.topViewController()
-        topView?.present(vc, animated: true, completion: nil)
+        
     }
     //컨트롤러 생성자
     override func viewDidLoad() {

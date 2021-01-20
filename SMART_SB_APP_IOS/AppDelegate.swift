@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 응용 프로그램 시작 후 사용자 지정 지점을 재정의합니다.
         UIApplication.shared.applicationIconBadgeNumber = 0 //알림배지 초기화
         
+        
+        /**************************** FDS service start *****************************/
+        ixcSecureManager.initLicense(Configuration.IXC_LICENSE, andCustomID: Configuration.IXC_CUSTOMER_ID)
+        /**************************** FDS service end *****************************/
         return true
     }
     

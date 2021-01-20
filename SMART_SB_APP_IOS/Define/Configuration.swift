@@ -129,8 +129,8 @@ class Configuration {
     static let OCR_ENCRYPTKEY = "FT3456789"
     
     //모바일 FDS
-    static let IXC_LICENSE = "C37819A2107A" //라이센스 id
-    static let IXC_CUSTOMER_ID = "JTCA_01"  //사용자 id
+    static let IXC_LICENSE = "C113FBD7D8A2" //라이센스 id
+    static let IXC_CUSTOMER_ID = "SMART_01"  //사용자 id
     
     
     

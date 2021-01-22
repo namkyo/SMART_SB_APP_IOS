@@ -12,6 +12,8 @@ class MainVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMess
     
     var webView: WKWebView!
     
+    var modalYn=false
+    
     //뷰 생성
     override func loadView() {
         super.loadView()
@@ -29,38 +31,46 @@ class MainVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMess
         webView = WKWebView(frame: self.view.frame, configuration: config)
         webView.uiDelegate = self
         webView.navigationDelegate = self
-        
-        
-        
         self.view.addSubview(webView)
-        print("화면전환");
-        let storyBoard=UIStoryboard(name: "Test", bundle: nil)
-        let vcName=storyBoard.instantiateViewController(withIdentifier: "TestVC") as! TestVC
-        //vcName.modalTransitionStyle = .coverVertical
-        //화면 전환 애니메이션을 설정합니다.
-        vcName.modalTransitionStyle = UIModalTransitionStyle.coverVertical
-        //self.present(vcName, animated: true, completion: nil)
-        
     }
     //컨트롤러 생성자
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         print("MainVC viewDidLoad : ")
         //1. 웹뷰 화면 생성
         webViewUI()
         if let strUrl = UserDefaults.standard.string(forKey: Configuration.URL){
             print("strUrl : "+strUrl)
-            let url = URL(string: strUrl)
-            let request = URLRequest(url: url!)
+           // let url = URL(string: strUrl)
+           // let request = URLRequest(url: url!)
             //웹뷰 url셋팅
-            self.webView.load(request)
+           // self.webView.load(request)
         }
         
         let url = URL(string: Configuration.DEV_URL)
         let request = URLRequest(url: url!)
         //웹뷰 url셋팅
         self.webView.load(request)
+        
+        
+        
+    }
+    //뷰 생성 끝나고
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        print("MainVC viewDidAppear : ")
+        print("MainVC modalYn : " , modalYn)
+        if modalYn==false{
+            print("화면전환");
+            let testStoryBoard=UIStoryboard(name: "Test", bundle: nil)
+            let uvc = testStoryBoard.instantiateViewController(withIdentifier: "TestVC")
+            
+            uvc.modalTransitionStyle=UIModalTransitionStyle.coverVertical
+            self.present(uvc, animated: true)
+            print("화면전환 끝");
+            modalYn=true
+            print("MainVC modalYn : " , modalYn)
+        }
     }
     
     
@@ -83,18 +93,13 @@ class MainVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMess
         }
     }
     
-    //뷰 생성 끝나고
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        print("viewDidAppear")
-    }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
-        print("viewWillDisappear")
+        print("MainVC viewWillDisappear")
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(true)
-        print("viewDidDisappear")
+        print("MainVC viewDidDisappear")
     }
     //웹뷰에서 요청
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {

@@ -1,5 +1,5 @@
 //
-//  SMART_SB-Bridging-Header.h
+//  SMART_SB_APP_IOS-Bridging-Header.h
 //  SMART
 //
 //  Created by 김남교 on 11/01/2021.
@@ -22,9 +22,14 @@
 #import <PACECaptureNRecog/PACECaptureNRecog.h>
 
 
+//FDS
+#import "ixcSecuLogMaster.h"
+#import "ixcSecureManager.h"
+#import "KeychainItemWrapper.h"
+#import "Util.h"
 
-#ifndef SMART_SB-Bridging-Header_h
-#define SMART_SB-Bridging-Header_h
+#ifndef SMART_SB_APP_IOS-Bridging-Header
+#define SMART_SB_APP_IOS-Bridging-Header
 
 
-#endif /* SMART_SB-Bridging-Header_h */
+#endif /* SMART_SB_APP_IOS-Bridging-Header */

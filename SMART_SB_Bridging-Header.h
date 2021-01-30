@@ -21,6 +21,10 @@
 //페이스 OCR
 #import <PACECaptureNRecog/PACECaptureNRecog.h>
 
+//코스콤
+//#import "NSHCData.h"
+//#import "ProtectedData.h"
+//#import "SecureData.h"
 
 //FDS
 #import "ixcSecuLogMaster.h"

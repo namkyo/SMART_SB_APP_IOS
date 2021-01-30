@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Util : NSObject
+@interface FdsUtil : NSObject
 
 + (NSString*) getUUID : (NSString *) identifier;
 

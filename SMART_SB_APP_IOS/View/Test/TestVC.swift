@@ -10,8 +10,6 @@ import UIKit
 class TestVC: UIViewController {
     
     override func loadView() {
-        //setStackView()
-       // makeBtn()
         super.loadView()
         print("TestVC loadView")
         makeBtn()
@@ -34,7 +32,7 @@ class TestVC: UIViewController {
             let btn = UIButton()
             btn.setTitle("test"+String(index), for: .normal)
             btn.setTitleColor(.white, for: .normal)
-            btn.frame=CGRect.init(x: 50,y: 50*index,width: 300,height: 50)
+            btn.frame=CGRect.init(x: 0,y: 50*index,width: 300,height: 50)
             btn.backgroundColor = .black
             btn.addTarget(self, action: #selector(onTapButton), for: .touchUpInside)
             self.view.addSubview(btn)

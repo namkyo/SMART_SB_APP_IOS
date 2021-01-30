@@ -22,6 +22,14 @@
 		E61EA0E325AAC24900653273 /* NativeBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA0E225AAC24900653273 /* NativeBridge.swift */; };
 		E61EA0EB25AAC37800653273 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61EA0EA25AAC37800653273 /* Splash.storyboard */; };
 		E61EA0FF25AAC99600653273 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA0FE25AAC99600653273 /* TestVC.swift */; };
+		E667CADA25C5B1B8008C0EBB /* Access.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E667CAD925C5B1B8008C0EBB /* Access.storyboard */; };
+		E667CADC25C5B1C9008C0EBB /* AccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667CADB25C5B1C9008C0EBB /* AccessVC.swift */; };
+		E667CAE125C5B252008C0EBB /* Pin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E667CAE025C5B252008C0EBB /* Pin.storyboard */; };
+		E667CAE325C5B25E008C0EBB /* PinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667CAE225C5B25E008C0EBB /* PinVC.swift */; };
+		E667CAE725C5B3B9008C0EBB /* CertListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667CAE625C5B3B9008C0EBB /* CertListVC.swift */; };
+		E667CAE925C5B3C7008C0EBB /* CertList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E667CAE825C5B3C7008C0EBB /* CertList.storyboard */; };
+		E68D133525C5361E002CC473 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68D133425C5361E002CC473 /* SceneCoordinator.swift */; };
+		E68D133725C5382D002CC473 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68D133625C5382D002CC473 /* Log.swift */; };
 		E6AF5AA625ABDD590073D3F2 /* Safetoken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12F25AB117200653273 /* Safetoken.framework */; };
 		E6AF5AA725ABDD590073D3F2 /* Safetoken.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12F25AB117200653273 /* Safetoken.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E6AF5AA925ABDD5C0073D3F2 /* SafetokenBiometric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12D25AB117100653273 /* SafetokenBiometric.framework */; };
@@ -61,8 +69,7 @@
 
 /* Begin PBXFileReference section */
 		114B1F2EE5F890ED314855BC /* Pods_SMART_SB_APP_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMART_SB_APP_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		36E5126B4A3523E0CA1DF510 /* Pods-SMART_SB_APP_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMART_SB_APP_IOS.debug.xcconfig"; path = "Target Support Files/Pods-SMART_SB_APP_IOS/Pods-SMART_SB_APP_IOS.debug.xcconfig"; sourceTree = "<group>"; };
-		42B2A7B2738BAF84D74087F8 /* Pods-SMART_SB_APP_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMART_SB_APP_IOS.release.xcconfig"; path = "Target Support Files/Pods-SMART_SB_APP_IOS/Pods-SMART_SB_APP_IOS.release.xcconfig"; sourceTree = "<group>"; };
+		3BA0C1B0A6F399BF3468D58D /* Pods-SMART_SB_APP_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMART_SB_APP_IOS.release.xcconfig"; path = "Target Support Files/Pods-SMART_SB_APP_IOS/Pods-SMART_SB_APP_IOS.release.xcconfig"; sourceTree = "<group>"; };
 		E61EA09925AABCF100653273 /* SMART_SB_APP_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMART_SB_APP_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61EA09C25AABCF100653273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E61EA09E25AABCF100653273 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +118,14 @@
 		E61EA12D25AB117100653273 /* SafetokenBiometric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SafetokenBiometric.framework; sourceTree = "<group>"; };
 		E61EA12E25AB117100653273 /* SafetokenPattern.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SafetokenPattern.framework; sourceTree = "<group>"; };
 		E61EA12F25AB117200653273 /* Safetoken.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Safetoken.framework; sourceTree = "<group>"; };
+		E667CAD925C5B1B8008C0EBB /* Access.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Access.storyboard; sourceTree = "<group>"; };
+		E667CADB25C5B1C9008C0EBB /* AccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessVC.swift; sourceTree = "<group>"; };
+		E667CAE025C5B252008C0EBB /* Pin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pin.storyboard; sourceTree = "<group>"; };
+		E667CAE225C5B25E008C0EBB /* PinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinVC.swift; sourceTree = "<group>"; };
+		E667CAE625C5B3B9008C0EBB /* CertListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertListVC.swift; sourceTree = "<group>"; };
+		E667CAE825C5B3C7008C0EBB /* CertList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CertList.storyboard; sourceTree = "<group>"; };
+		E68D133425C5361E002CC473 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
+		E68D133625C5382D002CC473 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		E6AF5AB025ABE03F0073D3F2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		E6AF5AB525ABE1DA0073D3F2 /* idcard_kor_one.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; name = idcard_kor_one.wgt; path = SMART_SB_APP_IOS/Lib/face_ocr/dat2/idcard_kor_one.wgt; sourceTree = SOURCE_ROOT; };
 		E6AF5AB625ABE1DA0073D3F2 /* asc.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; name = asc.wgt; path = SMART_SB_APP_IOS/Lib/face_ocr/dat2/asc.wgt; sourceTree = SOURCE_ROOT; };
@@ -128,6 +143,7 @@
 		E6DAA4FD25B8158400564DB4 /* ixcSecureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ixcSecureManager.h; sourceTree = "<group>"; };
 		E6DAA4FE25B8158500564DB4 /* ixcSecuLogMaster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ixcSecuLogMaster.h; sourceTree = "<group>"; };
 		E6DAA4FF25B8158600564DB4 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		ED3B7CEE11F787953063908C /* Pods-SMART_SB_APP_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMART_SB_APP_IOS.debug.xcconfig"; path = "Target Support Files/Pods-SMART_SB_APP_IOS/Pods-SMART_SB_APP_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,11 +164,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		64F49815A32A12573C1E1044 /* Pods */ = {
+		839E806ED29EDF2FA672BF62 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				36E5126B4A3523E0CA1DF510 /* Pods-SMART_SB_APP_IOS.debug.xcconfig */,
-				42B2A7B2738BAF84D74087F8 /* Pods-SMART_SB_APP_IOS.release.xcconfig */,
+				ED3B7CEE11F787953063908C /* Pods-SMART_SB_APP_IOS.debug.xcconfig */,
+				3BA0C1B0A6F399BF3468D58D /* Pods-SMART_SB_APP_IOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -163,8 +179,8 @@
 				E6DAA4F625B814F900564DB4 /* SMART_SB_Bridging-Header.h */,
 				E61EA09B25AABCF100653273 /* SMART_SB_APP_IOS */,
 				E61EA09A25AABCF100653273 /* Products */,
-				64F49815A32A12573C1E1044 /* Pods */,
 				F2E6DD7DE1BD394F2BA79383 /* Frameworks */,
+				839E806ED29EDF2FA672BF62 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,7 +198,6 @@
 				E61EA0EE25AAC4B500653273 /* ETC */,
 				E61EA0E625AAC27A00653273 /* Service */,
 				E61EA0CA25AAC01100653273 /* View */,
-				E61EA0C925AABFFC00653273 /* Stroyboard */,
 				E61EA0C825AABFE500653273 /* Lib */,
 				E61EA0C725AABFE000653273 /* Define */,
 				E61EA09C25AABCF100653273 /* AppDelegate.swift */,
@@ -218,16 +233,14 @@
 			path = Lib;
 			sourceTree = "<group>";
 		};
-		E61EA0C925AABFFC00653273 /* Stroyboard */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Stroyboard;
-			sourceTree = "<group>";
-		};
 		E61EA0CA25AAC01100653273 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E667CAE425C5B384008C0EBB /* Certificate */,
+				E667CADF25C5B242008C0EBB /* Bio */,
+				E667CADE25C5B23A008C0EBB /* Patturn */,
+				E667CADD25C5B235008C0EBB /* Pin */,
+				E667CAD825C5B19F008C0EBB /* Access */,
 				E61EA0FA25AAC97900653273 /* Test */,
 				E61EA0E925AAC32800653273 /* Splash */,
 				E61EA0E825AAC32200653273 /* Main */,
@@ -265,6 +278,8 @@
 		E61EA0EE25AAC4B500653273 /* ETC */ = {
 			isa = PBXGroup;
 			children = (
+				E68D133425C5361E002CC473 /* SceneCoordinator.swift */,
+				E68D133625C5382D002CC473 /* Log.swift */,
 			);
 			path = ETC;
 			sourceTree = "<group>";
@@ -353,6 +368,55 @@
 				E61EA12E25AB117100653273 /* SafetokenPattern.framework */,
 			);
 			path = eightbyte;
+			sourceTree = "<group>";
+		};
+		E667CAD825C5B19F008C0EBB /* Access */ = {
+			isa = PBXGroup;
+			children = (
+				E667CAD925C5B1B8008C0EBB /* Access.storyboard */,
+				E667CADB25C5B1C9008C0EBB /* AccessVC.swift */,
+			);
+			path = Access;
+			sourceTree = "<group>";
+		};
+		E667CADD25C5B235008C0EBB /* Pin */ = {
+			isa = PBXGroup;
+			children = (
+				E667CAE025C5B252008C0EBB /* Pin.storyboard */,
+				E667CAE225C5B25E008C0EBB /* PinVC.swift */,
+			);
+			path = Pin;
+			sourceTree = "<group>";
+		};
+		E667CADE25C5B23A008C0EBB /* Patturn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Patturn;
+			sourceTree = "<group>";
+		};
+		E667CADF25C5B242008C0EBB /* Bio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bio;
+			sourceTree = "<group>";
+		};
+		E667CAE425C5B384008C0EBB /* Certificate */ = {
+			isa = PBXGroup;
+			children = (
+				E667CAE525C5B398008C0EBB /* List */,
+			);
+			path = Certificate;
+			sourceTree = "<group>";
+		};
+		E667CAE525C5B398008C0EBB /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E667CAE625C5B3B9008C0EBB /* CertListVC.swift */,
+				E667CAE825C5B3C7008C0EBB /* CertList.storyboard */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		E6AF5AB425ABE1D40073D3F2 /* dat */ = {
@@ -459,6 +523,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E667CAE125C5B252008C0EBB /* Pin.storyboard in Resources */,
+				E667CADA25C5B1B8008C0EBB /* Access.storyboard in Resources */,
 				E61EA0A925AABCF200653273 /* LaunchScreen.storyboard in Resources */,
 				E61EA0A625AABCF200653273 /* Assets.xcassets in Resources */,
 				E6AF5AB825ABE1DA0073D3F2 /* idcard_kor_one.wgt in Resources */,
@@ -466,6 +532,7 @@
 				E61EA0EB25AAC37800653273 /* Splash.storyboard in Resources */,
 				E6AF5B2D25AC09D70073D3F2 /* Test.storyboard in Resources */,
 				E6AF5ABA25ABE1DA0073D3F2 /* hang.rec in Resources */,
+				E667CAE925C5B3C7008C0EBB /* CertList.storyboard in Resources */,
 				E61EA0A425AABCF100653273 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,11 +592,16 @@
 				E61EA0D825AAC12900653273 /* Configuration.swift in Sources */,
 				E61EA0CD25AAC09A00653273 /* SplashVC.swift in Sources */,
 				E61EA0A125AABCF100653273 /* MainVC.swift in Sources */,
+				E667CADC25C5B1C9008C0EBB /* AccessVC.swift in Sources */,
+				E68D133725C5382D002CC473 /* Log.swift in Sources */,
+				E68D133525C5361E002CC473 /* SceneCoordinator.swift in Sources */,
 				E6DAA4FA25B8150E00564DB4 /* KeychainItemWrapper.m in Sources */,
 				E61EA0E025AAC24600653273 /* Appdata.swift in Sources */,
 				E61EA09D25AABCF100653273 /* AppDelegate.swift in Sources */,
 				E6AF5B5C25AC11AE0073D3F2 /* StoryboardHelper.swift in Sources */,
+				E667CAE725C5B3B9008C0EBB /* CertListVC.swift in Sources */,
 				E61EA0E325AAC24900653273 /* NativeBridge.swift in Sources */,
+				E667CAE325C5B25E008C0EBB /* PinVC.swift in Sources */,
 				E61EA0D925AAC12900653273 /* String.swift in Sources */,
 				E61EA09F25AABCF100653273 /* SceneDelegate.swift in Sources */,
 				E61EA0D725AAC12900653273 /* Function.swift in Sources */,
@@ -676,7 +748,7 @@
 		};
 		E61EA0AE25AABCF200653273 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36E5126B4A3523E0CA1DF510 /* Pods-SMART_SB_APP_IOS.debug.xcconfig */;
+			baseConfigurationReference = ED3B7CEE11F787953063908C /* Pods-SMART_SB_APP_IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -713,7 +785,7 @@
 		};
 		E61EA0AF25AABCF200653273 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42B2A7B2738BAF84D74087F8 /* Pods-SMART_SB_APP_IOS.release.xcconfig */;
+			baseConfigurationReference = 3BA0C1B0A6F399BF3468D58D /* Pods-SMART_SB_APP_IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

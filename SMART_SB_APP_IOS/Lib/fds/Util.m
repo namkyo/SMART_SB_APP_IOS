@@ -8,7 +8,7 @@
 
 #import "Util.h"
 
-@implementation Util
+@implementation Util : NSObject
 
 + (NSString*) getUUID : (NSString *) identifier
 {

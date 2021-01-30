@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // 응용 프로그램 시작 후 사용자 지정 지점을 재정의합니다.
+        Log.print("AppDelegate application")
+        
         UIApplication.shared.applicationIconBadgeNumber = 0 //알림배지 초기화
+        
         
         
         /**************************** FDS service start *****************************/
@@ -26,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

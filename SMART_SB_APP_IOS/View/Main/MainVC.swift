@@ -14,6 +14,18 @@ class MainVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMess
     
     var modalYn=false
     
+    //컨트롤러 생성자
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        Log.print("MainVC viewDidLoad")
+        
+        self.navigationController?.navigationBar.isHidden = true
+        
+        webViewUI()
+        setupView()
+    }
+    
+    
     //뷰 생성
     override func loadView() {
         super.loadView()
@@ -33,12 +45,11 @@ class MainVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMess
         webView.navigationDelegate = self
         self.view.addSubview(webView)
     }
-    //컨트롤러 생성자
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    
+    func setupView() {
         print("MainVC viewDidLoad : ")
-        //1. 웹뷰 화면 생성
-        webViewUI()
+        //1. 웹뷰 화면 생성≈
         if let strUrl = UserDefaults.standard.string(forKey: Configuration.URL){
             print("strUrl : "+strUrl)
            // let url = URL(string: strUrl)
@@ -51,15 +62,14 @@ class MainVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMess
         let request = URLRequest(url: url!)
         //웹뷰 url셋팅
         self.webView.load(request)
-        
-        
-        
     }
+    
     //뷰 생성 끝나고
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         print("MainVC viewDidAppear : ")
         print("MainVC modalYn : " , modalYn)
+        /*
         if modalYn==false{
             print("화면전환");
             let testStoryBoard=UIStoryboard(name: "Test", bundle: nil)
@@ -70,7 +80,8 @@ class MainVC: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMess
             print("화면전환 끝");
             modalYn=true
             print("MainVC modalYn : " , modalYn)
-        }
+        }*/
+        SceneCoordinator().transition(to: "Test", using: .root, animated: false)
     }
     
     

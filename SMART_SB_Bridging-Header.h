@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 
 // SafeToken Bio
-#import "SafetokenBiometric/SafetokenBiometricAuth.h"
-#import "SafetokenBiometric/SafetokenBiometricAuthError.h"
+//#import "SafetokenBiometric/SafetokenBiometricAuth.h"
+//#import "SafetokenBiometric/SafetokenBiometricAuthError.h"
 
 //백신
 
@@ -22,13 +22,18 @@
 #import <PACECaptureNRecog/PACECaptureNRecog.h>
 
 //코스콤
+
 #import "NSHCData.h"
-#import "SecureData.h"
 #import "ProtectedData.h"
+#import "SecureData.h"
+#import "Util.h"
 
+#import "CertListVC.h"
+#import "ChangePasswordVC.h"
+#import "CheckPasswordVC.h"
+#import "ManageCertVC.h"
+#import "SelfVerifyVC.h"
 
-#import "Certificate.h"
-#import "CertManager.h"
 
 //FDS
 #import "ixcSecuLogMaster.h"

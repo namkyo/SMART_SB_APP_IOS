@@ -7,7 +7,8 @@
 
 import UIKit
 class CertListVC: UIViewController {
-    
+    @IBOutlet weak var tableView: UITableView!
+    let certList = AppDelegate().certManager
     override func loadView() {
         super.loadView()
         Log.print("CertListVC loadView")
@@ -24,5 +25,13 @@ class CertListVC: UIViewController {
         Log.print("CertListVC viewDidAppear")
     }
     
+    func setupView() {
+        if certList.count() == 0 {
+            UIApplication.shared.showAlert(message: "등록된 공동인증서가 없습니다.", confirmHandler: {
+                self.dismiss(animated: true, completion: nil)
+            })
+        }
+    }
+
     
 }

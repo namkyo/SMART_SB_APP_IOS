@@ -22,15 +22,18 @@
 #import <PACECaptureNRecog/PACECaptureNRecog.h>
 
 //코스콤
-//#import "NSHCData.h"
-//#import "ProtectedData.h"
-//#import "SecureData.h"
+#import "NSHCData.h"
+#import "SecureData.h"
+#import "ProtectedData.h"
+
+
+#import "Certificate.h"
+#import "CertManager.h"
 
 //FDS
 #import "ixcSecuLogMaster.h"
 #import "ixcSecureManager.h"
 #import "KeychainItemWrapper.h"
-#import "Util.h"
 
 #ifndef SMART_SB_APP_IOS-Bridging-Header
 #define SMART_SB_APP_IOS-Bridging-Header

@@ -11,6 +11,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let bgTaskView = UIView()
+    var certManager = CertManager()
     /**
      앱 초기설정
      */
@@ -20,8 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.shared.applicationIconBadgeNumber = 0 //알림배지 초기화
         
-        
-        
+        certManager = CertManager.init()
         /**************************** FDS service start *****************************/
         ixcSecureManager.initLicense(Configuration.IXC_LICENSE, andCustomID: Configuration.IXC_CUSTOMER_ID)
         /**************************** FDS service end *****************************/

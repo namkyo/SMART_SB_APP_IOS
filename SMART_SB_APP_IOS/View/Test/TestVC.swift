@@ -27,18 +27,27 @@ class TestVC: UIViewController {
     
     
     func makeBtn(){
-        for index in 1...5 {
-            print("TestVC UIButton index "+String(index))
-            let btn = UIButton()
-            btn.setTitle("test"+String(index), for: .normal)
-            btn.setTitleColor(.white, for: .normal)
-            btn.frame=CGRect.init(x: 0,y: 50*index,width: 300,height: 50)
-            btn.backgroundColor = .black
-            btn.addTarget(self, action: #selector(onTapButton), for: .touchUpInside)
-            self.view.addSubview(btn)
-        }
+        let btn = UIButton()
+        btn.setTitle("공동인증서 관리", for: .normal)
+        btn.setTitleColor(.white, for: .normal)
+        btn.frame=CGRect.init(x: 0,y: 50,width: 250,height: 50)
+        btn.backgroundColor = .black
+        btn.addTarget(self, action: #selector(onTapButton01), for: .touchUpInside)
+        self.view.addSubview(btn)
+        
+        let btn2 = UIButton()
+        btn2.setTitle("공동인증서 수행", for: .normal)
+        btn2.setTitleColor(.white, for: .normal)
+        btn2.frame=CGRect.init(x: 0,y: 100,width: 250,height: 50)
+        btn2.backgroundColor = .black
+        btn2.addTarget(self, action: #selector(onTapButton02), for: .touchUpInside)
+        self.view.addSubview(btn2)
     }
-    @objc func onTapButton() {
+    @objc func onTapButton01() {
+        print("Button was tapped.")
+        SceneCoordinator().transition(to: "CertList", using: .root, animated: false)
+    }
+    @objc func onTapButton02() {
         print("Button was tapped.")
     }
     

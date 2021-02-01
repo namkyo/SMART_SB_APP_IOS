@@ -17,8 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // 스토리 보드를 사용하는 경우`window` 속성이 자동으로 초기화되어 장면에 연결됩니다.
         //이 델리게이트는 연결 장면 또는 세션이 새로운 것을 의미하지 않습니다 (대신`application : configurationForConnectingSceneSession` 참조).
         
-        SceneCoordinator().transition(to: "Splash", using: .root, animated: false)
-        
+        SceneCoordinator().transition(to: "Splash", using: .root, animated: true)
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

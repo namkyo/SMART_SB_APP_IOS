@@ -71,7 +71,8 @@ class NativeBridge{
                 exit(0)
                 break
             default:
-                <#code#>
+                Log.print(message: "default ")
+                break
             }
             
         }

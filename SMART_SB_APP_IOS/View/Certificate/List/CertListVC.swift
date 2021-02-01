@@ -18,6 +18,7 @@ class CertListVC: UIViewController {
     override func loadView() {
         super.loadView()
         Log.print("CertListVC loadView")
+        self.navigationController?.navigationBar.isHidden = true
     }
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,7 +9,7 @@ import Foundation
 
 class Configuration {
     //main url
-    static let DEV_URL = "https://www.naver.com"
+    static let DEV_URL = "http://172.17.171.1:8010"
     static let OPER_URL = "https://www.naver.com"
     //sub url
     static let ERR_URL = "/error.html"

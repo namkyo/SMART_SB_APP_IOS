@@ -57,7 +57,7 @@ class MainVC: UIViewController{
            // self.webView.load(request)
         }
         
-        let url = URL(string: Configuration.DEV_URL)
+        let url = URL(string: (Configuration.DEV_URL+Configuration.MAIN_VIEW_URL))
         let request = URLRequest(url: url!)
         //웹뷰 url셋팅
         self.webView.load(request)

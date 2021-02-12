@@ -20,19 +20,16 @@
 
 //페이스 OCR
 #import <PACECaptureNRecog/PACECaptureNRecog.h>
-
 //코스콤
 
 #import "NSHCData.h"
 #import "ProtectedData.h"
 #import "SecureData.h"
-#import "Util.h"
+#import "ICRProtocol.h"
+#import "KSdebug.h"
 
-#import "CertListVC.h"
-#import "ChangePasswordVC.h"
-#import "CheckPasswordVC.h"
-#import "ManageCertVC.h"
-#import "SelfVerifyVC.h"
+
+#import "CertManager.h"
 
 
 //FDS

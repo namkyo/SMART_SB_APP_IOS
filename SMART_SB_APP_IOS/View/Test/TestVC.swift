@@ -52,6 +52,23 @@ class TestVC: UIViewController {
         btn3.backgroundColor = .black
         btn3.addTarget(self, action: #selector(onTapButton03), for: .touchUpInside)
         self.view.addSubview(btn3)
+        
+        let btn4 = UIButton()
+        btn4.setTitle("공동인증서 가져오기", for: .normal)
+        btn4.setTitleColor(.white, for: .normal)
+        btn4.frame=CGRect.init(x: 0,y: 200,width: 250,height: 50)
+        btn4.backgroundColor = .black
+        btn4.addTarget(self, action: #selector(onTapButton04), for: .touchUpInside)
+        self.view.addSubview(btn4)
+        
+        let btn5 = UIButton()
+        btn5.setTitle("OCR", for: .normal)
+        btn5.setTitleColor(.white, for: .normal)
+        btn5.frame=CGRect.init(x: 0,y: 250,width: 250,height: 50)
+        btn5.backgroundColor = .black
+        btn5.addTarget(self, action: #selector(onTapButton05), for: .touchUpInside)
+        self.view.addSubview(btn5)
+        
     }
     @objc func onTapButton01() {
         print("Button was tapped.")
@@ -65,6 +82,14 @@ class TestVC: UIViewController {
     }
     @objc func onTapButton03() {
         print("Button was tapped.")
+    }
+    @objc func onTapButton04() {
+        SceneCoordinator().transition(to: "CertImport", using: .root, animated: true)
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    @objc func onTapButton05() {
+        SceneCoordinator().transition(to: "Ocr", using: .root, animated: true)
+        self.navigationController?.navigationBar.isHidden = false
     }
     
     //뷰 생성 끝나고

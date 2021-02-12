@@ -1,6 +1,0 @@
-framework module PACECaptureNRecog {
-  umbrella header "PACECaptureNRecog.h"
-
-  export *
-  module * { export * }
-}

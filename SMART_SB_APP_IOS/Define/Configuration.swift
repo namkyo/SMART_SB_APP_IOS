@@ -20,6 +20,11 @@ class Configuration {
     static let OPER_DEV_YN=false
     
     
+    //인증서가져오기 주소
+    static let KSW_IP="210.207.195.142"
+    static let KSW_PORT=10500
+    
+    
     
     static let JS_TO_SWIFT = "postMessage()"
     

@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         certManager = CertManager.init()
         certManager.useIPv6=true
+        
         /**************************** FDS service start *****************************/
         ixcSecureManager.initLicense(Configuration.IXC_LICENSE, andCustomID: Configuration.IXC_CUSTOMER_ID)
         /**************************** FDS service end *****************************/

@@ -7,7 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A6A2DB829BAEDE114DDE80E /* Pods_SMART_SB_APP_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B1F2EE5F890ED314855BC /* Pods_SMART_SB_APP_IOS.framework */; };
+		E6019F3625D664780020C064 /* CertListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6019F3525D664780020C064 /* CertListCell.swift */; };
+		E6019F3825D6AFCF0020C064 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AF5AB025ABE03F0073D3F2 /* CoreVideo.framework */; };
+		E6019F3B25D6AFF30020C064 /* OcrVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6019F3A25D6AFF30020C064 /* OcrVC.swift */; };
+		E6019F3D25D6B09B0020C064 /* Ocr.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6019F3C25D6B09B0020C064 /* Ocr.storyboard */; };
+		E6019F5E25D6B99D0020C064 /* Pattrun.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6019F5D25D6B99D0020C064 /* Pattrun.storyboard */; };
+		E6019F6025D6B9A90020C064 /* PattrunVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6019F5F25D6B9A90020C064 /* PattrunVC.swift */; };
+		E6019F6225D6B9EB0020C064 /* BioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6019F6125D6B9EB0020C064 /* BioVC.swift */; };
+		E6019F6425D6BA0B0020C064 /* Bio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6019F6325D6BA0B0020C064 /* Bio.storyboard */; };
+		E6056A6325D5048C00CD69C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6056A6225D5048B00CD69C8 /* Constants.swift */; };
+		E6056A7125D5062400CD69C8 /* asc.wgt in Resources */ = {isa = PBXBuildFile; fileRef = E6056A6E25D5062300CD69C8 /* asc.wgt */; };
+		E6056A7225D5062400CD69C8 /* idcard_kor_one.wgt in Resources */ = {isa = PBXBuildFile; fileRef = E6056A6F25D5062400CD69C8 /* idcard_kor_one.wgt */; };
+		E6056A7325D5062400CD69C8 /* hang.rec in Resources */ = {isa = PBXBuildFile; fileRef = E6056A7025D5062400CD69C8 /* hang.rec */; };
+		E6056A7625D5065A00CD69C8 /* PACECaptureNRecog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E6056A7425D5062700CD69C8 /* PACECaptureNRecog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6056A7925D506E700CD69C8 /* Pods_SMART_SB_APP_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114B1F2EE5F890ED314855BC /* Pods_SMART_SB_APP_IOS.framework */; };
+		E6056A7A25D506E700CD69C8 /* Pods_SMART_SB_APP_IOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 114B1F2EE5F890ED314855BC /* Pods_SMART_SB_APP_IOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E6056A7B25D506EE00CD69C8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AF5ABF25ABE2EB0073D3F2 /* AVFoundation.framework */; };
+		E6056ADD25D5085700CD69C8 /* KSaria.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6056ABB25D5085700CD69C8 /* KSaria.ct */; };
+		E6056ADE25D5085700CD69C8 /* signkr.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6056ABC25D5085700CD69C8 /* signkr.ct */; };
+		E6056ADF25D5085700CD69C8 /* signgate.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6056ABD25D5085700CD69C8 /* signgate.ct */; };
+		E6056AE025D5085700CD69C8 /* kisaroot.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6056AC125D5085700CD69C8 /* kisaroot.ct */; };
+		E6056AE125D5085700CD69C8 /* xmca.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6056AD425D5085700CD69C8 /* xmca.ct */; };
+		E6056AE225D5085700CD69C8 /* yessign.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6056ADA25D5085700CD69C8 /* yessign.ct */; };
+		E6056AFC25D5108B00CD69C8 /* libKeySharpiPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6056AF425D5087500CD69C8 /* libKeySharpiPhone.a */; };
+		E6056AFD25D5108F00CD69C8 /* libKeySharpiPhoneICRP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6056AEE25D5087500CD69C8 /* libKeySharpiPhoneICRP.a */; };
+		E6056AFE25D5109C00CD69C8 /* libSecureData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6056AEB25D5087500CD69C8 /* libSecureData.a */; };
+		E6056B0825D5525100CD69C8 /* PACECaptureNRecog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6056A7425D5062700CD69C8 /* PACECaptureNRecog.framework */; };
+		E6056B0D25D56C5A00CD69C8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F23E9E25C7E883003C8C00 /* Security.framework */; };
+		E6056B1D25D56F1000CD69C8 /* libSecuLogMaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DAA4F425B8140800564DB4 /* libSecuLogMaster.a */; };
+		E6056B5C25D584D100CD69C8 /* CertImportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6056B5B25D584D100CD69C8 /* CertImportVC.swift */; };
+		E6056B5E25D584EC00CD69C8 /* CertImport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6056B5D25D584EC00CD69C8 /* CertImport.storyboard */; };
 		E61EA09D25AABCF100653273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA09C25AABCF100653273 /* AppDelegate.swift */; };
 		E61EA09F25AABCF100653273 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA09E25AABCF100653273 /* SceneDelegate.swift */; };
 		E61EA0A125AABCF100653273 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA0A025AABCF100653273 /* MainVC.swift */; };
@@ -30,35 +59,11 @@
 		E667CAE925C5B3C7008C0EBB /* CertList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E667CAE825C5B3C7008C0EBB /* CertList.storyboard */; };
 		E68D133525C5361E002CC473 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68D133425C5361E002CC473 /* SceneCoordinator.swift */; };
 		E68D133725C5382D002CC473 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68D133625C5382D002CC473 /* Log.swift */; };
-		E6AF5AA625ABDD590073D3F2 /* Safetoken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12F25AB117200653273 /* Safetoken.framework */; };
-		E6AF5AA725ABDD590073D3F2 /* Safetoken.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12F25AB117200653273 /* Safetoken.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E6AF5AA925ABDD5C0073D3F2 /* SafetokenBiometric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12D25AB117100653273 /* SafetokenBiometric.framework */; };
-		E6AF5AAA25ABDD5C0073D3F2 /* SafetokenBiometric.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12D25AB117100653273 /* SafetokenBiometric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E6AF5AAB25ABDD5E0073D3F2 /* SafetokenPattern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12E25AB117100653273 /* SafetokenPattern.framework */; };
-		E6AF5AAC25ABDD5E0073D3F2 /* SafetokenPattern.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA12E25AB117100653273 /* SafetokenPattern.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E6AF5AAD25ABDD680073D3F2 /* PACECaptureNRecog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA11C25AB0FD700653273 /* PACECaptureNRecog.framework */; };
-		E6AF5AAE25ABDD680073D3F2 /* PACECaptureNRecog.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61EA11C25AB0FD700653273 /* PACECaptureNRecog.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E6AF5AB825ABE1DA0073D3F2 /* idcard_kor_one.wgt in Resources */ = {isa = PBXBuildFile; fileRef = E6AF5AB525ABE1DA0073D3F2 /* idcard_kor_one.wgt */; };
-		E6AF5AB925ABE1DA0073D3F2 /* asc.wgt in Resources */ = {isa = PBXBuildFile; fileRef = E6AF5AB625ABE1DA0073D3F2 /* asc.wgt */; };
-		E6AF5ABA25ABE1DA0073D3F2 /* hang.rec in Resources */ = {isa = PBXBuildFile; fileRef = E6AF5AB725ABE1DA0073D3F2 /* hang.rec */; };
-		E6AF5AC025ABE2EB0073D3F2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AF5ABF25ABE2EB0073D3F2 /* AVFoundation.framework */; };
 		E6AF5B2D25AC09D70073D3F2 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6AF5B2C25AC09D70073D3F2 /* Test.storyboard */; };
 		E6AF5B5C25AC11AE0073D3F2 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF5B5B25AC11AE0073D3F2 /* StoryboardHelper.swift */; };
 		E6AF5B5E25AC12970073D3F2 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AF5B5D25AC12970073D3F2 /* UIApplication.swift */; };
-		E6DAA4F525B8140900564DB4 /* libSecuLogMaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DAA4F425B8140800564DB4 /* libSecuLogMaster.a */; };
 		E6DAA4F925B8150E00564DB4 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DAA4F725B8150900564DB4 /* Util.m */; };
 		E6DAA4FA25B8150E00564DB4 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DAA4F825B8150E00564DB4 /* KeychainItemWrapper.m */; };
-		E6F23E8625C7E1B9003C8C00 /* KSaria.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6F23E5125C7E197003C8C00 /* KSaria.ct */; };
-		E6F23E8725C7E1B9003C8C00 /* xmca.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6F23E6E25C7E1A7003C8C00 /* xmca.ct */; };
-		E6F23E8825C7E1B9003C8C00 /* yessign.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6F23E7025C7E1A8003C8C00 /* yessign.ct */; };
-		E6F23E8925C7E1B9003C8C00 /* kisaroot.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6F23E7C25C7E1B2003C8C00 /* kisaroot.ct */; };
-		E6F23E8A25C7E1B9003C8C00 /* signgate.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6F23E7E25C7E1B3003C8C00 /* signgate.ct */; };
-		E6F23E8B25C7E1B9003C8C00 /* signkr.ct in Resources */ = {isa = PBXBuildFile; fileRef = E6F23E8325C7E1B7003C8C00 /* signkr.ct */; };
-		E6F23E9D25C7E1EC003C8C00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F23E9C25C7E1EC003C8C00 /* Constants.swift */; };
-		E6F23E9F25C7E883003C8C00 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F23E9E25C7E883003C8C00 /* Security.framework */; };
-		E6F23EA325C7E8A2003C8C00 /* SignKoreaFramework in Resources */ = {isa = PBXBuildFile; fileRef = E6F23EA025C7E8A2003C8C00 /* SignKoreaFramework */; };
-		E6F23EA425C7E8A2003C8C00 /* libSecureData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F23EA125C7E8A2003C8C00 /* libSecureData.a */; };
-		E6F23EA525C7E8A2003C8C00 /* libKeySharpiPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F23EA225C7E8A2003C8C00 /* libKeySharpiPhone.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,10 +73,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E6AF5AAA25ABDD5C0073D3F2 /* SafetokenBiometric.framework in Embed Frameworks */,
-				E6AF5AA725ABDD590073D3F2 /* Safetoken.framework in Embed Frameworks */,
-				E6AF5AAE25ABDD680073D3F2 /* PACECaptureNRecog.framework in Embed Frameworks */,
-				E6AF5AAC25ABDD5E0073D3F2 /* SafetokenPattern.framework in Embed Frameworks */,
+				E6056A7A25D506E700CD69C8 /* Pods_SMART_SB_APP_IOS.framework in Embed Frameworks */,
+				E6056A7625D5065A00CD69C8 /* PACECaptureNRecog.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +84,117 @@
 /* Begin PBXFileReference section */
 		114B1F2EE5F890ED314855BC /* Pods_SMART_SB_APP_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMART_SB_APP_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA0C1B0A6F399BF3468D58D /* Pods-SMART_SB_APP_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMART_SB_APP_IOS.release.xcconfig"; path = "Target Support Files/Pods-SMART_SB_APP_IOS/Pods-SMART_SB_APP_IOS.release.xcconfig"; sourceTree = "<group>"; };
+		E6019F3525D664780020C064 /* CertListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertListCell.swift; sourceTree = "<group>"; };
+		E6019F3A25D6AFF30020C064 /* OcrVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcrVC.swift; sourceTree = "<group>"; };
+		E6019F3C25D6B09B0020C064 /* Ocr.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ocr.storyboard; sourceTree = "<group>"; };
+		E6019F5D25D6B99D0020C064 /* Pattrun.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pattrun.storyboard; sourceTree = "<group>"; };
+		E6019F5F25D6B9A90020C064 /* PattrunVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PattrunVC.swift; sourceTree = "<group>"; };
+		E6019F6125D6B9EB0020C064 /* BioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BioVC.swift; path = SMART_SB_APP_IOS/View/Patturn/BioVC.swift; sourceTree = SOURCE_ROOT; };
+		E6019F6325D6BA0B0020C064 /* Bio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Bio.storyboard; path = SMART_SB_APP_IOS/View/Patturn/Bio.storyboard; sourceTree = SOURCE_ROOT; };
+		E6056A6225D5048B00CD69C8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E6056A6E25D5062300CD69C8 /* asc.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = asc.wgt; sourceTree = "<group>"; };
+		E6056A6F25D5062400CD69C8 /* idcard_kor_one.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; path = idcard_kor_one.wgt; sourceTree = "<group>"; };
+		E6056A7025D5062400CD69C8 /* hang.rec */ = {isa = PBXFileReference; lastKnownFileType = file; path = hang.rec; sourceTree = "<group>"; };
+		E6056A7425D5062700CD69C8 /* PACECaptureNRecog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PACECaptureNRecog.framework; sourceTree = "<group>"; };
+		E6056A8425D5082300CD69C8 /* NSHCData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSHCData.h; sourceTree = "<group>"; };
+		E6056A8525D5082300CD69C8 /* SecureData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureData.h; sourceTree = "<group>"; };
+		E6056A8625D5082300CD69C8 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		E6056A8725D5082400CD69C8 /* ProtectedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtectedData.h; sourceTree = "<group>"; };
+		E6056A8825D5083500CD69C8 /* KSDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSDevice.h; sourceTree = "<group>"; };
+		E6056A8925D5083600CD69C8 /* KSKeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSKeychainItemWrapper.h; sourceTree = "<group>"; };
+		E6056A8A25D5084300CD69C8 /* ICRProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICRProtocol.h; sourceTree = "<group>"; };
+		E6056A8C25D5085700CD69C8 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		E6056A8E25D5085700CD69C8 /* SignKoreaFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignKoreaFramework.h; sourceTree = "<group>"; };
+		E6056A8F25D5085700CD69C8 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		E6056A9025D5085700CD69C8 /* CertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CertManager.h; sourceTree = "<group>"; };
+		E6056A9125D5085700CD69C8 /* NCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCCommon.h; sourceTree = "<group>"; };
+		E6056A9225D5085700CD69C8 /* BillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillViewController.h; sourceTree = "<group>"; };
+		E6056A9325D5085700CD69C8 /* EasyJSWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyJSWebView.h; sourceTree = "<group>"; };
+		E6056A9425D5085700CD69C8 /* EasyJSDataFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyJSDataFunction.h; sourceTree = "<group>"; };
+		E6056A9525D5085700CD69C8 /* Certificate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Certificate.h; sourceTree = "<group>"; };
+		E6056A9625D5085700CD69C8 /* EasyJSWebViewProxyDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyJSWebViewProxyDelegate.h; sourceTree = "<group>"; };
+		E6056A9725D5085700CD69C8 /* CopyCertificate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyCertificate.h; sourceTree = "<group>"; };
+		E6056A9825D5085700CD69C8 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		E6056A9925D5085700CD69C8 /* KeyChainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainManager.h; sourceTree = "<group>"; };
+		E6056A9A25D5085700CD69C8 /* KSCertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCertManager.h; sourceTree = "<group>"; };
+		E6056A9B25D5085700CD69C8 /* KS2Translator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KS2Translator.h; sourceTree = "<group>"; };
+		E6056A9C25D5085700CD69C8 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		E6056A9D25D5085700CD69C8 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		E6056A9F25D5085700CD69C8 /* KSsock.h_back.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSsock.h_back.h; sourceTree = "<group>"; };
+		E6056AA025D5085700CD69C8 /* KSpkcs8Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs8Util.h; sourceTree = "<group>"; };
+		E6056AA125D5085700CD69C8 /* KScbcmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScbcmac.h; sourceTree = "<group>"; };
+		E6056AA225D5085700CD69C8 /* KSbin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSbin.h; sourceTree = "<group>"; };
+		E6056AA325D5085700CD69C8 /* KSrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSrand.h; sourceTree = "<group>"; };
+		E6056AA425D5085700CD69C8 /* KSutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSutil.h; sourceTree = "<group>"; };
+		E6056AA525D5085700CD69C8 /* KSprime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSprime.h; sourceTree = "<group>"; };
+		E6056AA625D5085700CD69C8 /* KScert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScert.h; sourceTree = "<group>"; };
+		E6056AA725D5085700CD69C8 /* KSpkcs10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs10.h; sourceTree = "<group>"; };
+		E6056AA825D5085700CD69C8 /* KSdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSdebug.h; sourceTree = "<group>"; };
+		E6056AA925D5085700CD69C8 /* KSbigint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSbigint.h; sourceTree = "<group>"; };
+		E6056AAA25D5085700CD69C8 /* KShmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KShmac.h; sourceTree = "<group>"; };
+		E6056AAB25D5085700CD69C8 /* KSpkcs1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs1.h; sourceTree = "<group>"; };
+		E6056AAC25D5085700CD69C8 /* KSrp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSrp.h; sourceTree = "<group>"; };
+		E6056AAD25D5085700CD69C8 /* KSdessp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSdessp.h; sourceTree = "<group>"; };
+		E6056AAE25D5085700CD69C8 /* KSasntypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSasntypes.h; sourceTree = "<group>"; };
+		E6056AAF25D5085700CD69C8 /* prime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prime.h; sourceTree = "<group>"; };
+		E6056AB025D5085700CD69C8 /* KSpkcs5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs5.h; sourceTree = "<group>"; };
+		E6056AB125D5085700CD69C8 /* KScmperr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScmperr.h; sourceTree = "<group>"; };
+		E6056AB225D5085700CD69C8 /* KSerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSerror.h; sourceTree = "<group>"; };
+		E6056AB325D5085700CD69C8 /* KSdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSdh.h; sourceTree = "<group>"; };
+		E6056AB425D5085700CD69C8 /* KSaria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSaria.h; sourceTree = "<group>"; };
+		E6056AB525D5085700CD69C8 /* CertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CertManager.h; sourceTree = "<group>"; };
+		E6056AB625D5085700CD69C8 /* KShash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KShash.h; sourceTree = "<group>"; };
+		E6056AB725D5085700CD69C8 /* KSdes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSdes.h; sourceTree = "<group>"; };
+		E6056AB825D5085700CD69C8 /* RA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RA.h; sourceTree = "<group>"; };
+		E6056AB925D5085700CD69C8 /* KSaes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSaes.h; sourceTree = "<group>"; };
+		E6056ABA25D5085700CD69C8 /* KSpkcs8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs8.h; sourceTree = "<group>"; };
+		E6056ABB25D5085700CD69C8 /* KSaria.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KSaria.ct; sourceTree = "<group>"; };
+		E6056ABC25D5085700CD69C8 /* signkr.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signkr.ct; sourceTree = "<group>"; };
+		E6056ABD25D5085700CD69C8 /* signgate.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signgate.ct; sourceTree = "<group>"; };
+		E6056ABE25D5085700CD69C8 /* KSseed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSseed.h; sourceTree = "<group>"; };
+		E6056ABF25D5085700CD69C8 /* KSHybridEnvelop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSHybridEnvelop.h; sourceTree = "<group>"; };
+		E6056AC025D5085700CD69C8 /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		E6056AC125D5085700CD69C8 /* kisaroot.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kisaroot.ct; sourceTree = "<group>"; };
+		E6056AC225D5085700CD69C8 /* KSder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSder.h; sourceTree = "<group>"; };
+		E6056AC325D5085700CD69C8 /* KScipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScipher.h; sourceTree = "<group>"; };
+		E6056AC425D5085700CD69C8 /* KSpkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs12.h; sourceTree = "<group>"; };
+		E6056AC525D5085700CD69C8 /* KSprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSprotocol.h; sourceTree = "<group>"; };
+		E6056AC625D5085700CD69C8 /* KSx509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSx509.h; sourceTree = "<group>"; };
+		E6056AC725D5085700CD69C8 /* KScmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScmp.h; sourceTree = "<group>"; };
+		E6056AC825D5085700CD69C8 /* KSmd5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSmd5.h; sourceTree = "<group>"; };
+		E6056AC925D5085700CD69C8 /* KSkcdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSkcdsa.h; sourceTree = "<group>"; };
+		E6056ACA25D5085700CD69C8 /* KSaesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSaesApi.h; sourceTree = "<group>"; };
+		E6056ACB25D5085700CD69C8 /* KSphash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSphash.h; sourceTree = "<group>"; };
+		E6056ACC25D5085700CD69C8 /* KSaesAlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSaesAlg.h; sourceTree = "<group>"; };
+		E6056ACD25D5085700CD69C8 /* KScmpproto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScmpproto.h; sourceTree = "<group>"; };
+		E6056ACE25D5085700CD69C8 /* KSsha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSsha256.h; sourceTree = "<group>"; };
+		E6056ACF25D5085700CD69C8 /* KSsock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSsock.h; sourceTree = "<group>"; };
+		E6056AD025D5085700CD69C8 /* KSrc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSrc2.h; sourceTree = "<group>"; };
+		E6056AD125D5085700CD69C8 /* KSsha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSsha.h; sourceTree = "<group>"; };
+		E6056AD225D5085700CD69C8 /* KSbase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSbase64.h; sourceTree = "<group>"; };
+		E6056AD325D5085700CD69C8 /* KShsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KShsa.h; sourceTree = "<group>"; };
+		E6056AD425D5085700CD69C8 /* xmca.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xmca.ct; sourceTree = "<group>"; };
+		E6056AD525D5085700CD69C8 /* KSobigo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSobigo.h; sourceTree = "<group>"; };
+		E6056AD625D5085700CD69C8 /* KSdefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSdefine.h; sourceTree = "<group>"; };
+		E6056AD725D5085700CD69C8 /* KStdes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KStdes.h; sourceTree = "<group>"; };
+		E6056AD825D5085700CD69C8 /* KScms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScms.h; sourceTree = "<group>"; };
+		E6056AD925D5085700CD69C8 /* KStcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KStcp.h; sourceTree = "<group>"; };
+		E6056ADA25D5085700CD69C8 /* yessign.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yessign.ct; sourceTree = "<group>"; };
+		E6056ADB25D5085700CD69C8 /* KSoid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSoid.h; sourceTree = "<group>"; };
+		E6056ADC25D5085700CD69C8 /* KSclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSclient.h; sourceTree = "<group>"; };
+		E6056AE325D5086500CD69C8 /* FingerprintCertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingerprintCertManager.h; sourceTree = "<group>"; };
+		E6056AE425D5086500CD69C8 /* DeviceDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDetection.h; sourceTree = "<group>"; };
+		E6056AE725D5087500CD69C8 /* libFingerprintCertManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFingerprintCertManager.a; sourceTree = "<group>"; };
+		E6056AE825D5087500CD69C8 /* libFingerprintCertManager-SK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libFingerprintCertManager-SK.a"; sourceTree = "<group>"; };
+		E6056AEB25D5087500CD69C8 /* libSecureData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSecureData.a; sourceTree = "<group>"; };
+		E6056AEE25D5087500CD69C8 /* libKeySharpiPhoneICRP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libKeySharpiPhoneICRP.a; sourceTree = "<group>"; };
+		E6056AF125D5087500CD69C8 /* libKeySharpiPhoneUtil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libKeySharpiPhoneUtil.a; sourceTree = "<group>"; };
+		E6056AF425D5087500CD69C8 /* libKeySharpiPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libKeySharpiPhone.a; sourceTree = "<group>"; };
+		E6056AFF25D511BE00CD69C8 /* SafetokenBiometric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafetokenBiometric.framework; path = "../../../../../../Desktop/스마트솔루션/2. 사설인증-에잇바이트/x8byte-safetoken_v3_2_1_20201231_SMARTSB/03. iOS/SafetokenBiometric.framework"; sourceTree = "<group>"; };
+		E6056B0025D511BE00CD69C8 /* SafetokenPattern.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafetokenPattern.framework; path = "../../../../../../Desktop/스마트솔루션/2. 사설인증-에잇바이트/x8byte-safetoken_v3_2_1_20201231_SMARTSB/03. iOS/SafetokenPattern.framework"; sourceTree = "<group>"; };
+		E6056B0125D511BF00CD69C8 /* Safetoken.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Safetoken.framework; path = "../../../../../../Desktop/스마트솔루션/2. 사설인증-에잇바이트/x8byte-safetoken_v3_2_1_20201231_SMARTSB/03. iOS/Safetoken.framework"; sourceTree = "<group>"; };
+		E6056B5B25D584D100CD69C8 /* CertImportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertImportVC.swift; sourceTree = "<group>"; };
+		E6056B5D25D584EC00CD69C8 /* CertImport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CertImport.storyboard; sourceTree = "<group>"; };
 		E61EA09925AABCF100653273 /* SMART_SB_APP_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMART_SB_APP_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61EA09C25AABCF100653273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E61EA09E25AABCF100653273 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,11 +234,6 @@
 		E61EA11625AB0EB800653273 /* ESDefaultNumericKeypadLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDefaultNumericKeypadLayoutManager.h; sourceTree = "<group>"; };
 		E61EA11725AB0EB800653273 /* ESKeyMagViewAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESKeyMagViewAlign.h; sourceTree = "<group>"; };
 		E61EA11825AB0EB800653273 /* ESKeypadMagAppearanceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESKeypadMagAppearanceManager.h; sourceTree = "<group>"; };
-		E61EA11C25AB0FD700653273 /* PACECaptureNRecog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PACECaptureNRecog.framework; sourceTree = "<group>"; };
-		E61EA12425AB110100653273 /* libSecureData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSecureData.a; sourceTree = "<group>"; };
-		E61EA12D25AB117100653273 /* SafetokenBiometric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SafetokenBiometric.framework; sourceTree = "<group>"; };
-		E61EA12E25AB117100653273 /* SafetokenPattern.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SafetokenPattern.framework; sourceTree = "<group>"; };
-		E61EA12F25AB117200653273 /* Safetoken.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Safetoken.framework; sourceTree = "<group>"; };
 		E667CAD925C5B1B8008C0EBB /* Access.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Access.storyboard; sourceTree = "<group>"; };
 		E667CADB25C5B1C9008C0EBB /* AccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessVC.swift; sourceTree = "<group>"; };
 		E667CAE025C5B252008C0EBB /* Pin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pin.storyboard; sourceTree = "<group>"; };
@@ -134,9 +243,6 @@
 		E68D133425C5361E002CC473 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		E68D133625C5382D002CC473 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		E6AF5AB025ABE03F0073D3F2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		E6AF5AB525ABE1DA0073D3F2 /* idcard_kor_one.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; name = idcard_kor_one.wgt; path = SMART_SB_APP_IOS/Lib/face_ocr/dat2/idcard_kor_one.wgt; sourceTree = SOURCE_ROOT; };
-		E6AF5AB625ABE1DA0073D3F2 /* asc.wgt */ = {isa = PBXFileReference; lastKnownFileType = file; name = asc.wgt; path = SMART_SB_APP_IOS/Lib/face_ocr/dat2/asc.wgt; sourceTree = SOURCE_ROOT; };
-		E6AF5AB725ABE1DA0073D3F2 /* hang.rec */ = {isa = PBXFileReference; lastKnownFileType = file; name = hang.rec; path = SMART_SB_APP_IOS/Lib/face_ocr/dat2/hang.rec; sourceTree = SOURCE_ROOT; };
 		E6AF5ABB25ABE2E00073D3F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E6AF5ABF25ABE2EB0073D3F2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E6AF5B2C25AC09D70073D3F2 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
@@ -150,98 +256,7 @@
 		E6DAA4FD25B8158400564DB4 /* ixcSecureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ixcSecureManager.h; sourceTree = "<group>"; };
 		E6DAA4FE25B8158500564DB4 /* ixcSecuLogMaster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ixcSecuLogMaster.h; sourceTree = "<group>"; };
 		E6DAA4FF25B8158600564DB4 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
-		E6F23E3A25C7E0A0003C8C00 /* CheckPasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CheckPasswordVC.h; path = "../../../../../../../Downloads/SMART_SB_APP_IOS-main/SMART_SB_APP_IOS/Lib/cert/include/CheckPasswordVC.h"; sourceTree = "<group>"; };
-		E6F23E3B25C7E0A0003C8C00 /* ChangePasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ChangePasswordVC.h; path = "../../../../../../../Downloads/SMART_SB_APP_IOS-main/SMART_SB_APP_IOS/Lib/cert/include/ChangePasswordVC.h"; sourceTree = "<group>"; };
-		E6F23E3C25C7E0A0003C8C00 /* ManageCertVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ManageCertVC.h; path = "../../../../../../../Downloads/SMART_SB_APP_IOS-main/SMART_SB_APP_IOS/Lib/cert/include/ManageCertVC.h"; sourceTree = "<group>"; };
-		E6F23E3D25C7E0A0003C8C00 /* CertListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CertListVC.h; path = "../../../../../../../Downloads/SMART_SB_APP_IOS-main/SMART_SB_APP_IOS/Lib/cert/include/CertListVC.h"; sourceTree = "<group>"; };
-		E6F23E3E25C7E0A0003C8C00 /* SelfVerifyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SelfVerifyVC.h; path = "../../../../../../../Downloads/SMART_SB_APP_IOS-main/SMART_SB_APP_IOS/Lib/cert/include/SelfVerifyVC.h"; sourceTree = "<group>"; };
-		E6F23E4125C7E166003C8C00 /* NSHCData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSHCData.h; sourceTree = "<group>"; };
-		E6F23E4225C7E166003C8C00 /* ProtectedData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtectedData.h; sourceTree = "<group>"; };
-		E6F23E4325C7E167003C8C00 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
-		E6F23E4425C7E167003C8C00 /* SecureData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecureData.h; sourceTree = "<group>"; };
-		E6F23E4825C7E192003C8C00 /* KScert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScert.h; sourceTree = "<group>"; };
-		E6F23E4925C7E192003C8C00 /* KSseed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSseed.h; sourceTree = "<group>"; };
-		E6F23E4A25C7E193003C8C00 /* KSpkcs5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs5.h; sourceTree = "<group>"; };
-		E6F23E4B25C7E194003C8C00 /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
-		E6F23E4C25C7E194003C8C00 /* KSbin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSbin.h; sourceTree = "<group>"; };
-		E6F23E4D25C7E195003C8C00 /* KSasntypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSasntypes.h; sourceTree = "<group>"; };
-		E6F23E4E25C7E195003C8C00 /* KSbase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSbase64.h; sourceTree = "<group>"; };
-		E6F23E4F25C7E196003C8C00 /* KSaesAlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSaesAlg.h; sourceTree = "<group>"; };
-		E6F23E5025C7E197003C8C00 /* KSsock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSsock.h; sourceTree = "<group>"; };
-		E6F23E5125C7E197003C8C00 /* KSaria.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KSaria.ct; sourceTree = "<group>"; };
-		E6F23E5225C7E198003C8C00 /* prime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prime.h; sourceTree = "<group>"; };
-		E6F23E5325C7E199003C8C00 /* KSaesApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSaesApi.h; sourceTree = "<group>"; };
-		E6F23E5425C7E199003C8C00 /* KSrp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSrp.h; sourceTree = "<group>"; };
-		E6F23E5525C7E19A003C8C00 /* KSrc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSrc2.h; sourceTree = "<group>"; };
-		E6F23E5625C7E19A003C8C00 /* KSpkcs8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs8.h; sourceTree = "<group>"; };
-		E6F23E5725C7E19B003C8C00 /* KScmpproto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScmpproto.h; sourceTree = "<group>"; };
-		E6F23E5825C7E19B003C8C00 /* KScmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScmp.h; sourceTree = "<group>"; };
-		E6F23E5925C7E19C003C8C00 /* KSobigo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSobigo.h; sourceTree = "<group>"; };
-		E6F23E5A25C7E19D003C8C00 /* KSpkcs8Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs8Util.h; sourceTree = "<group>"; };
-		E6F23E5B25C7E19D003C8C00 /* KSbigint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSbigint.h; sourceTree = "<group>"; };
-		E6F23E5C25C7E19D003C8C00 /* KSphash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSphash.h; sourceTree = "<group>"; };
-		E6F23E5D25C7E19E003C8C00 /* KSmd5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSmd5.h; sourceTree = "<group>"; };
-		E6F23E5E25C7E19E003C8C00 /* KSclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSclient.h; sourceTree = "<group>"; };
-		E6F23E5F25C7E19F003C8C00 /* KSx509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSx509.h; sourceTree = "<group>"; };
-		E6F23E6025C7E19F003C8C00 /* KScms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScms.h; sourceTree = "<group>"; };
-		E6F23E6125C7E1A0003C8C00 /* KSsha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSsha.h; sourceTree = "<group>"; };
-		E6F23E6225C7E1A0003C8C00 /* KStcp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KStcp.h; sourceTree = "<group>"; };
-		E6F23E6325C7E1A1003C8C00 /* KSdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSdh.h; sourceTree = "<group>"; };
-		E6F23E6425C7E1A1003C8C00 /* CertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CertManager.h; sourceTree = "<group>"; };
-		E6F23E6525C7E1A2003C8C00 /* KSpkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs12.h; sourceTree = "<group>"; };
-		E6F23E6625C7E1A2003C8C00 /* KScmperr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScmperr.h; sourceTree = "<group>"; };
-		E6F23E6725C7E1A3003C8C00 /* KSdes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSdes.h; sourceTree = "<group>"; };
-		E6F23E6825C7E1A4003C8C00 /* KSprotocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSprotocol.h; sourceTree = "<group>"; };
-		E6F23E6925C7E1A4003C8C00 /* KSrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSrand.h; sourceTree = "<group>"; };
-		E6F23E6A25C7E1A5003C8C00 /* KShsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KShsa.h; sourceTree = "<group>"; };
-		E6F23E6B25C7E1A6003C8C00 /* KStdes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KStdes.h; sourceTree = "<group>"; };
-		E6F23E6C25C7E1A6003C8C00 /* KShmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KShmac.h; sourceTree = "<group>"; };
-		E6F23E6D25C7E1A7003C8C00 /* KSdessp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSdessp.h; sourceTree = "<group>"; };
-		E6F23E6E25C7E1A7003C8C00 /* xmca.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xmca.ct; sourceTree = "<group>"; };
-		E6F23E6F25C7E1A8003C8C00 /* KSoid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSoid.h; sourceTree = "<group>"; };
-		E6F23E7025C7E1A8003C8C00 /* yessign.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yessign.ct; sourceTree = "<group>"; };
-		E6F23E7125C7E1A9003C8C00 /* KSaes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSaes.h; sourceTree = "<group>"; };
-		E6F23E7225C7E1A9003C8C00 /* RA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RA.h; sourceTree = "<group>"; };
-		E6F23E7325C7E1AA003C8C00 /* KSerror.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSerror.h; sourceTree = "<group>"; };
-		E6F23E7425C7E1AA003C8C00 /* KScbcmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScbcmac.h; sourceTree = "<group>"; };
-		E6F23E7525C7E1AB003C8C00 /* KSsha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSsha256.h; sourceTree = "<group>"; };
-		E6F23E7625C7E1AE003C8C00 /* KSpkcs1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs1.h; sourceTree = "<group>"; };
-		E6F23E7725C7E1AE003C8C00 /* KSdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSdebug.h; sourceTree = "<group>"; };
-		E6F23E7825C7E1AF003C8C00 /* KSkcdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSkcdsa.h; sourceTree = "<group>"; };
-		E6F23E7925C7E1B0003C8C00 /* KScipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KScipher.h; sourceTree = "<group>"; };
-		E6F23E7A25C7E1B1003C8C00 /* KSprime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSprime.h; sourceTree = "<group>"; };
-		E6F23E7B25C7E1B1003C8C00 /* KSdefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSdefine.h; sourceTree = "<group>"; };
-		E6F23E7C25C7E1B2003C8C00 /* kisaroot.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kisaroot.ct; sourceTree = "<group>"; };
-		E6F23E7D25C7E1B3003C8C00 /* KSsock.h_back.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSsock.h_back.h; sourceTree = "<group>"; };
-		E6F23E7E25C7E1B3003C8C00 /* signgate.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signgate.ct; sourceTree = "<group>"; };
-		E6F23E7F25C7E1B4003C8C00 /* KShash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KShash.h; sourceTree = "<group>"; };
-		E6F23E8025C7E1B5003C8C00 /* KSHybridEnvelop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSHybridEnvelop.h; sourceTree = "<group>"; };
-		E6F23E8125C7E1B5003C8C00 /* KSpkcs10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSpkcs10.h; sourceTree = "<group>"; };
-		E6F23E8225C7E1B6003C8C00 /* KSder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSder.h; sourceTree = "<group>"; };
-		E6F23E8325C7E1B7003C8C00 /* signkr.ct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = signkr.ct; path = "../../../../../../../../Downloads/SMART_SB_APP_IOS-main/SMART_SB_APP_IOS/Lib/cert/include/Crypto/signkr.ct"; sourceTree = "<group>"; };
-		E6F23E8425C7E1B8003C8C00 /* KSutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSutil.h; sourceTree = "<group>"; };
-		E6F23E8525C7E1B9003C8C00 /* KSaria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSaria.h; sourceTree = "<group>"; };
-		E6F23E8C25C7E1C6003C8C00 /* KS2Translator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KS2Translator.h; sourceTree = "<group>"; };
-		E6F23E8D25C7E1C7003C8C00 /* CertManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertManager.h; sourceTree = "<group>"; };
-		E6F23E8E25C7E1C8003C8C00 /* KSCertManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSCertManager.h; sourceTree = "<group>"; };
-		E6F23E8F25C7E1C8003C8C00 /* FMResultSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		E6F23E9025C7E1C9003C8C00 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
-		E6F23E9125C7E1CA003C8C00 /* Certificate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Certificate.h; sourceTree = "<group>"; };
-		E6F23E9225C7E1CA003C8C00 /* EasyJSWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyJSWebView.h; sourceTree = "<group>"; };
-		E6F23E9325C7E1CB003C8C00 /* CopyCertificate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyCertificate.h; sourceTree = "<group>"; };
-		E6F23E9425C7E1CC003C8C00 /* EasyJSDataFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyJSDataFunction.h; sourceTree = "<group>"; };
-		E6F23E9525C7E1CC003C8C00 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		E6F23E9625C7E1CD003C8C00 /* FMDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		E6F23E9725C7E1CE003C8C00 /* NCCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NCCommon.h; sourceTree = "<group>"; };
-		E6F23E9825C7E1CE003C8C00 /* KeyChainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyChainManager.h; sourceTree = "<group>"; };
-		E6F23E9925C7E1CF003C8C00 /* EasyJSWebViewProxyDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyJSWebViewProxyDelegate.h; sourceTree = "<group>"; };
-		E6F23E9A25C7E1CF003C8C00 /* BillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillViewController.h; sourceTree = "<group>"; };
-		E6F23E9B25C7E1D0003C8C00 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
-		E6F23E9C25C7E1EC003C8C00 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "../../../../../Downloads/SMART_SB_APP_IOS-main/SMART_SB_APP_IOS/Define/Constants.swift"; sourceTree = "<group>"; };
 		E6F23E9E25C7E883003C8C00 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		E6F23EA025C7E8A2003C8C00 /* SignKoreaFramework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SignKoreaFramework; path = "../../../../../../../Downloads/SMART_SB_APP_IOS-main/SMART_SB_APP_IOS/Lib/cert/lib/SignKoreaFramework"; sourceTree = "<group>"; };
-		E6F23EA125C7E8A2003C8C00 /* libSecureData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSecureData.a; path = "../../../../../../../Downloads/SMART_SB_APP_IOS-main/SMART_SB_APP_IOS/Lib/cert/lib/libSecureData.a"; sourceTree = "<group>"; };
-		E6F23EA225C7E8A2003C8C00 /* libKeySharpiPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKeySharpiPhone.a; path = "../../../../../../../Downloads/SMART_SB_APP_IOS-main/SMART_SB_APP_IOS/Lib/cert/lib/libKeySharpiPhone.a"; sourceTree = "<group>"; };
 		ED3B7CEE11F787953063908C /* Pods-SMART_SB_APP_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMART_SB_APP_IOS.debug.xcconfig"; path = "Target Support Files/Pods-SMART_SB_APP_IOS/Pods-SMART_SB_APP_IOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,16 +265,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6AF5AC025ABE2EB0073D3F2 /* AVFoundation.framework in Frameworks */,
-				E6F23EA425C7E8A2003C8C00 /* libSecureData.a in Frameworks */,
-				E6AF5AAB25ABDD5E0073D3F2 /* SafetokenPattern.framework in Frameworks */,
-				E6AF5AA925ABDD5C0073D3F2 /* SafetokenBiometric.framework in Frameworks */,
-				E6DAA4F525B8140900564DB4 /* libSecuLogMaster.a in Frameworks */,
-				E6F23EA525C7E8A2003C8C00 /* libKeySharpiPhone.a in Frameworks */,
-				E6AF5AA625ABDD590073D3F2 /* Safetoken.framework in Frameworks */,
-				5A6A2DB829BAEDE114DDE80E /* Pods_SMART_SB_APP_IOS.framework in Frameworks */,
-				E6F23E9F25C7E883003C8C00 /* Security.framework in Frameworks */,
-				E6AF5AAD25ABDD680073D3F2 /* PACECaptureNRecog.framework in Frameworks */,
+				E6056B0D25D56C5A00CD69C8 /* Security.framework in Frameworks */,
+				E6056A7B25D506EE00CD69C8 /* AVFoundation.framework in Frameworks */,
+				E6056B0825D5525100CD69C8 /* PACECaptureNRecog.framework in Frameworks */,
+				E6056AFD25D5108F00CD69C8 /* libKeySharpiPhoneICRP.a in Frameworks */,
+				E6056B1D25D56F1000CD69C8 /* libSecuLogMaster.a in Frameworks */,
+				E6019F3825D6AFCF0020C064 /* CoreVideo.framework in Frameworks */,
+				E6056AFC25D5108B00CD69C8 /* libKeySharpiPhone.a in Frameworks */,
+				E6056AFE25D5109C00CD69C8 /* libSecureData.a in Frameworks */,
+				E6056A7925D506E700CD69C8 /* Pods_SMART_SB_APP_IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +287,295 @@
 				3BA0C1B0A6F399BF3468D58D /* Pods-SMART_SB_APP_IOS.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E6019F3425D664100020C064 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E6019F3525D664780020C064 /* CertListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E6019F3725D6AF9E0020C064 /* Ocr */ = {
+			isa = PBXGroup;
+			children = (
+				E6019F3A25D6AFF30020C064 /* OcrVC.swift */,
+				E6019F3C25D6B09B0020C064 /* Ocr.storyboard */,
+			);
+			path = Ocr;
+			sourceTree = "<group>";
+		};
+		E6056A6C25D5060A00CD69C8 /* FaceSystem */ = {
+			isa = PBXGroup;
+			children = (
+				E6056A7425D5062700CD69C8 /* PACECaptureNRecog.framework */,
+				E6056A6D25D5061B00CD69C8 /* dat */,
+			);
+			path = FaceSystem;
+			sourceTree = "<group>";
+		};
+		E6056A6D25D5061B00CD69C8 /* dat */ = {
+			isa = PBXGroup;
+			children = (
+				E6056A6E25D5062300CD69C8 /* asc.wgt */,
+				E6056A7025D5062400CD69C8 /* hang.rec */,
+				E6056A6F25D5062400CD69C8 /* idcard_kor_one.wgt */,
+			);
+			path = dat;
+			sourceTree = "<group>";
+		};
+		E6056A7E25D507EA00CD69C8 /* FingerprintCertManager include */ = {
+			isa = PBXGroup;
+			children = (
+				E6056AE425D5086500CD69C8 /* DeviceDetection.h */,
+				E6056AE325D5086500CD69C8 /* FingerprintCertManager.h */,
+			);
+			path = "FingerprintCertManager include";
+			sourceTree = "<group>";
+		};
+		E6056A7F25D507F300CD69C8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E6056A8325D5081400CD69C8 /* SecureData include */,
+				E6056A8225D5080D00CD69C8 /* KeySharpiPhoneUtil include */,
+				E6056A8125D5080600CD69C8 /* KeySharpiPhoneICRP include */,
+				E6056A8025D507FF00CD69C8 /* KeySharpiPhone include */,
+				E6056A7E25D507EA00CD69C8 /* FingerprintCertManager include */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E6056A8025D507FF00CD69C8 /* KeySharpiPhone include */ = {
+			isa = PBXGroup;
+			children = (
+				E6056A8B25D5085700CD69C8 /* bridge include */,
+				E6056A9E25D5085700CD69C8 /* crypto include */,
+			);
+			path = "KeySharpiPhone include";
+			sourceTree = "<group>";
+		};
+		E6056A8125D5080600CD69C8 /* KeySharpiPhoneICRP include */ = {
+			isa = PBXGroup;
+			children = (
+				E6056A8A25D5084300CD69C8 /* ICRProtocol.h */,
+			);
+			path = "KeySharpiPhoneICRP include";
+			sourceTree = "<group>";
+		};
+		E6056A8225D5080D00CD69C8 /* KeySharpiPhoneUtil include */ = {
+			isa = PBXGroup;
+			children = (
+				E6056A8825D5083500CD69C8 /* KSDevice.h */,
+				E6056A8925D5083600CD69C8 /* KSKeychainItemWrapper.h */,
+			);
+			path = "KeySharpiPhoneUtil include";
+			sourceTree = "<group>";
+		};
+		E6056A8325D5081400CD69C8 /* SecureData include */ = {
+			isa = PBXGroup;
+			children = (
+				E6056A8425D5082300CD69C8 /* NSHCData.h */,
+				E6056A8725D5082400CD69C8 /* ProtectedData.h */,
+				E6056A8525D5082300CD69C8 /* SecureData.h */,
+				E6056A8625D5082300CD69C8 /* Util.h */,
+			);
+			path = "SecureData include";
+			sourceTree = "<group>";
+		};
+		E6056A8B25D5085700CD69C8 /* bridge include */ = {
+			isa = PBXGroup;
+			children = (
+				E6056A8C25D5085700CD69C8 /* FMDatabase.h */,
+				E6056A8D25D5085700CD69C8 /* SignKoreaFramework */,
+				E6056A8F25D5085700CD69C8 /* FMResultSet.h */,
+				E6056A9025D5085700CD69C8 /* CertManager.h */,
+				E6056A9125D5085700CD69C8 /* NCCommon.h */,
+				E6056A9225D5085700CD69C8 /* BillViewController.h */,
+				E6056A9325D5085700CD69C8 /* EasyJSWebView.h */,
+				E6056A9425D5085700CD69C8 /* EasyJSDataFunction.h */,
+				E6056A9525D5085700CD69C8 /* Certificate.h */,
+				E6056A9625D5085700CD69C8 /* EasyJSWebViewProxyDelegate.h */,
+				E6056A9725D5085700CD69C8 /* CopyCertificate.h */,
+				E6056A9825D5085700CD69C8 /* Util.h */,
+				E6056A9925D5085700CD69C8 /* KeyChainManager.h */,
+				E6056A9A25D5085700CD69C8 /* KSCertManager.h */,
+				E6056A9B25D5085700CD69C8 /* KS2Translator.h */,
+				E6056A9C25D5085700CD69C8 /* FMDatabaseAdditions.h */,
+				E6056A9D25D5085700CD69C8 /* Logger.h */,
+			);
+			path = "bridge include";
+			sourceTree = "<group>";
+		};
+		E6056A8D25D5085700CD69C8 /* SignKoreaFramework */ = {
+			isa = PBXGroup;
+			children = (
+				E6056A8E25D5085700CD69C8 /* SignKoreaFramework.h */,
+			);
+			path = SignKoreaFramework;
+			sourceTree = "<group>";
+		};
+		E6056A9E25D5085700CD69C8 /* crypto include */ = {
+			isa = PBXGroup;
+			children = (
+				E6056A9F25D5085700CD69C8 /* KSsock.h_back.h */,
+				E6056AA025D5085700CD69C8 /* KSpkcs8Util.h */,
+				E6056AA125D5085700CD69C8 /* KScbcmac.h */,
+				E6056AA225D5085700CD69C8 /* KSbin.h */,
+				E6056AA325D5085700CD69C8 /* KSrand.h */,
+				E6056AA425D5085700CD69C8 /* KSutil.h */,
+				E6056AA525D5085700CD69C8 /* KSprime.h */,
+				E6056AA625D5085700CD69C8 /* KScert.h */,
+				E6056AA725D5085700CD69C8 /* KSpkcs10.h */,
+				E6056AA825D5085700CD69C8 /* KSdebug.h */,
+				E6056AA925D5085700CD69C8 /* KSbigint.h */,
+				E6056AAA25D5085700CD69C8 /* KShmac.h */,
+				E6056AAB25D5085700CD69C8 /* KSpkcs1.h */,
+				E6056AAC25D5085700CD69C8 /* KSrp.h */,
+				E6056AAD25D5085700CD69C8 /* KSdessp.h */,
+				E6056AAE25D5085700CD69C8 /* KSasntypes.h */,
+				E6056AAF25D5085700CD69C8 /* prime.h */,
+				E6056AB025D5085700CD69C8 /* KSpkcs5.h */,
+				E6056AB125D5085700CD69C8 /* KScmperr.h */,
+				E6056AB225D5085700CD69C8 /* KSerror.h */,
+				E6056AB325D5085700CD69C8 /* KSdh.h */,
+				E6056AB425D5085700CD69C8 /* KSaria.h */,
+				E6056AB525D5085700CD69C8 /* CertManager.h */,
+				E6056AB625D5085700CD69C8 /* KShash.h */,
+				E6056AB725D5085700CD69C8 /* KSdes.h */,
+				E6056AB825D5085700CD69C8 /* RA.h */,
+				E6056AB925D5085700CD69C8 /* KSaes.h */,
+				E6056ABA25D5085700CD69C8 /* KSpkcs8.h */,
+				E6056ABB25D5085700CD69C8 /* KSaria.ct */,
+				E6056ABC25D5085700CD69C8 /* signkr.ct */,
+				E6056ABD25D5085700CD69C8 /* signgate.ct */,
+				E6056ABE25D5085700CD69C8 /* KSseed.h */,
+				E6056ABF25D5085700CD69C8 /* KSHybridEnvelop.h */,
+				E6056AC025D5085700CD69C8 /* thread.h */,
+				E6056AC125D5085700CD69C8 /* kisaroot.ct */,
+				E6056AC225D5085700CD69C8 /* KSder.h */,
+				E6056AC325D5085700CD69C8 /* KScipher.h */,
+				E6056AC425D5085700CD69C8 /* KSpkcs12.h */,
+				E6056AC525D5085700CD69C8 /* KSprotocol.h */,
+				E6056AC625D5085700CD69C8 /* KSx509.h */,
+				E6056AC725D5085700CD69C8 /* KScmp.h */,
+				E6056AC825D5085700CD69C8 /* KSmd5.h */,
+				E6056AC925D5085700CD69C8 /* KSkcdsa.h */,
+				E6056ACA25D5085700CD69C8 /* KSaesApi.h */,
+				E6056ACB25D5085700CD69C8 /* KSphash.h */,
+				E6056ACC25D5085700CD69C8 /* KSaesAlg.h */,
+				E6056ACD25D5085700CD69C8 /* KScmpproto.h */,
+				E6056ACE25D5085700CD69C8 /* KSsha256.h */,
+				E6056ACF25D5085700CD69C8 /* KSsock.h */,
+				E6056AD025D5085700CD69C8 /* KSrc2.h */,
+				E6056AD125D5085700CD69C8 /* KSsha.h */,
+				E6056AD225D5085700CD69C8 /* KSbase64.h */,
+				E6056AD325D5085700CD69C8 /* KShsa.h */,
+				E6056AD425D5085700CD69C8 /* xmca.ct */,
+				E6056AD525D5085700CD69C8 /* KSobigo.h */,
+				E6056AD625D5085700CD69C8 /* KSdefine.h */,
+				E6056AD725D5085700CD69C8 /* KStdes.h */,
+				E6056AD825D5085700CD69C8 /* KScms.h */,
+				E6056AD925D5085700CD69C8 /* KStcp.h */,
+				E6056ADA25D5085700CD69C8 /* yessign.ct */,
+				E6056ADB25D5085700CD69C8 /* KSoid.h */,
+				E6056ADC25D5085700CD69C8 /* KSclient.h */,
+			);
+			path = "crypto include";
+			sourceTree = "<group>";
+		};
+		E6056AE525D5087500CD69C8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E6056AE625D5087500CD69C8 /* FingerprintCertManager lib */,
+				E6056AE925D5087500CD69C8 /* SecureData lib */,
+				E6056AEC25D5087500CD69C8 /* KeySharpiPhoneICRP lib */,
+				E6056AEF25D5087500CD69C8 /* KeySharpiPhoneUtil lib */,
+				E6056AF225D5087500CD69C8 /* KeySharpiPhone lib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E6056AE625D5087500CD69C8 /* FingerprintCertManager lib */ = {
+			isa = PBXGroup;
+			children = (
+				E6056AE725D5087500CD69C8 /* libFingerprintCertManager.a */,
+				E6056AE825D5087500CD69C8 /* libFingerprintCertManager-SK.a */,
+			);
+			path = "FingerprintCertManager lib";
+			sourceTree = "<group>";
+		};
+		E6056AE925D5087500CD69C8 /* SecureData lib */ = {
+			isa = PBXGroup;
+			children = (
+				E6056AEA25D5087500CD69C8 /* Release-iphoneos */,
+			);
+			path = "SecureData lib";
+			sourceTree = "<group>";
+		};
+		E6056AEA25D5087500CD69C8 /* Release-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				E6056AEB25D5087500CD69C8 /* libSecureData.a */,
+			);
+			path = "Release-iphoneos";
+			sourceTree = "<group>";
+		};
+		E6056AEC25D5087500CD69C8 /* KeySharpiPhoneICRP lib */ = {
+			isa = PBXGroup;
+			children = (
+				E6056AED25D5087500CD69C8 /* Release-iphoneos */,
+			);
+			path = "KeySharpiPhoneICRP lib";
+			sourceTree = "<group>";
+		};
+		E6056AED25D5087500CD69C8 /* Release-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				E6056AEE25D5087500CD69C8 /* libKeySharpiPhoneICRP.a */,
+			);
+			path = "Release-iphoneos";
+			sourceTree = "<group>";
+		};
+		E6056AEF25D5087500CD69C8 /* KeySharpiPhoneUtil lib */ = {
+			isa = PBXGroup;
+			children = (
+				E6056AF025D5087500CD69C8 /* Release-iphoneos */,
+			);
+			path = "KeySharpiPhoneUtil lib";
+			sourceTree = "<group>";
+		};
+		E6056AF025D5087500CD69C8 /* Release-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				E6056AF125D5087500CD69C8 /* libKeySharpiPhoneUtil.a */,
+			);
+			path = "Release-iphoneos";
+			sourceTree = "<group>";
+		};
+		E6056AF225D5087500CD69C8 /* KeySharpiPhone lib */ = {
+			isa = PBXGroup;
+			children = (
+				E6056AF325D5087500CD69C8 /* Release-iphoneos */,
+			);
+			path = "KeySharpiPhone lib";
+			sourceTree = "<group>";
+		};
+		E6056AF325D5087500CD69C8 /* Release-iphoneos */ = {
+			isa = PBXGroup;
+			children = (
+				E6056AF425D5087500CD69C8 /* libKeySharpiPhone.a */,
+			);
+			path = "Release-iphoneos";
+			sourceTree = "<group>";
+		};
+		E6056B5A25D578F200CD69C8 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				E6056B5B25D584D100CD69C8 /* CertImportVC.swift */,
+				E6056B5D25D584EC00CD69C8 /* CertImport.storyboard */,
+			);
+			path = Import;
 			sourceTree = "<group>";
 		};
 		E61EA09025AABCF000653273 = {
@@ -314,7 +617,7 @@
 		E61EA0C725AABFE000653273 /* Define */ = {
 			isa = PBXGroup;
 			children = (
-				E6F23E9C25C7E1EC003C8C00 /* Constants.swift */,
+				E6056A6225D5048B00CD69C8 /* Constants.swift */,
 				E61EA0D425AAC12800653273 /* Configuration.swift */,
 				E61EA0D325AAC12800653273 /* Function.swift */,
 				E61EA0D525AAC12900653273 /* String.swift */,
@@ -327,10 +630,10 @@
 		E61EA0C825AABFE500653273 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				E6056A6C25D5060A00CD69C8 /* FaceSystem */,
 				E6DAA4F125B813DF00564DB4 /* fds */,
 				E61EA12C25AB113300653273 /* eightbyte */,
-				E61EA12225AB100900653273 /* cert */,
-				E61EA11B25AB0FC500653273 /* face_ocr */,
+				E61EA12225AB100900653273 /* Koscom */,
 				E61EA10125AB0E9400653273 /* eversafe_keypad */,
 			);
 			path = Lib;
@@ -339,6 +642,7 @@
 		E61EA0CA25AAC01100653273 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E6019F3725D6AF9E0020C064 /* Ocr */,
 				E667CAE425C5B384008C0EBB /* Certificate */,
 				E667CADF25C5B242008C0EBB /* Bio */,
 				E667CADE25C5B23A008C0EBB /* Patturn */,
@@ -426,56 +730,21 @@
 			path = eversafe_keypad;
 			sourceTree = "<group>";
 		};
-		E61EA11B25AB0FC500653273 /* face_ocr */ = {
+		E61EA12225AB100900653273 /* Koscom */ = {
 			isa = PBXGroup;
 			children = (
-				E6AF5AB425ABE1D40073D3F2 /* dat */,
-				E61EA11C25AB0FD700653273 /* PACECaptureNRecog.framework */,
+				E6056AE525D5087500CD69C8 /* lib */,
+				E6056A7F25D507F300CD69C8 /* include */,
 			);
-			path = face_ocr;
-			sourceTree = "<group>";
-		};
-		E61EA12225AB100900653273 /* cert */ = {
-			isa = PBXGroup;
-			children = (
-				E61EA12725AB110500653273 /* include */,
-				E61EA12325AB10F800653273 /* lib */,
-			);
-			path = cert;
-			sourceTree = "<group>";
-		};
-		E61EA12325AB10F800653273 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				E6F23EA225C7E8A2003C8C00 /* libKeySharpiPhone.a */,
-				E6F23EA125C7E8A2003C8C00 /* libSecureData.a */,
-				E6F23EA025C7E8A2003C8C00 /* SignKoreaFramework */,
-				E61EA12425AB110100653273 /* libSecureData.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		E61EA12725AB110500653273 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				E6F23E4725C7E189003C8C00 /* crypto include */,
-				E6F23E4525C7E17A003C8C00 /* KeySharp */,
-				E6F23E4025C7E15E003C8C00 /* SecureData */,
-				E6F23E3D25C7E0A0003C8C00 /* CertListVC.h */,
-				E6F23E3B25C7E0A0003C8C00 /* ChangePasswordVC.h */,
-				E6F23E3A25C7E0A0003C8C00 /* CheckPasswordVC.h */,
-				E6F23E3C25C7E0A0003C8C00 /* ManageCertVC.h */,
-				E6F23E3E25C7E0A0003C8C00 /* SelfVerifyVC.h */,
-			);
-			path = include;
+			path = Koscom;
 			sourceTree = "<group>";
 		};
 		E61EA12C25AB113300653273 /* eightbyte */ = {
 			isa = PBXGroup;
 			children = (
-				E61EA12F25AB117200653273 /* Safetoken.framework */,
-				E61EA12D25AB117100653273 /* SafetokenBiometric.framework */,
-				E61EA12E25AB117100653273 /* SafetokenPattern.framework */,
+				E6056B0125D511BF00CD69C8 /* Safetoken.framework */,
+				E6056AFF25D511BE00CD69C8 /* SafetokenBiometric.framework */,
+				E6056B0025D511BE00CD69C8 /* SafetokenPattern.framework */,
 			);
 			path = eightbyte;
 			sourceTree = "<group>";
@@ -501,6 +770,8 @@
 		E667CADE25C5B23A008C0EBB /* Patturn */ = {
 			isa = PBXGroup;
 			children = (
+				E6019F5D25D6B99D0020C064 /* Pattrun.storyboard */,
+				E6019F5F25D6B9A90020C064 /* PattrunVC.swift */,
 			);
 			path = Patturn;
 			sourceTree = "<group>";
@@ -508,6 +779,8 @@
 		E667CADF25C5B242008C0EBB /* Bio */ = {
 			isa = PBXGroup;
 			children = (
+				E6019F6125D6B9EB0020C064 /* BioVC.swift */,
+				E6019F6325D6BA0B0020C064 /* Bio.storyboard */,
 			);
 			path = Bio;
 			sourceTree = "<group>";
@@ -515,6 +788,7 @@
 		E667CAE425C5B384008C0EBB /* Certificate */ = {
 			isa = PBXGroup;
 			children = (
+				E6056B5A25D578F200CD69C8 /* Import */,
 				E667CAE525C5B398008C0EBB /* List */,
 			);
 			path = Certificate;
@@ -523,20 +797,11 @@
 		E667CAE525C5B398008C0EBB /* List */ = {
 			isa = PBXGroup;
 			children = (
+				E6019F3425D664100020C064 /* Cell */,
 				E667CAE625C5B3B9008C0EBB /* CertListVC.swift */,
 				E667CAE825C5B3C7008C0EBB /* CertList.storyboard */,
 			);
 			path = List;
-			sourceTree = "<group>";
-		};
-		E6AF5AB425ABE1D40073D3F2 /* dat */ = {
-			isa = PBXGroup;
-			children = (
-				E6AF5AB625ABE1DA0073D3F2 /* asc.wgt */,
-				E6AF5AB725ABE1DA0073D3F2 /* hang.rec */,
-				E6AF5AB525ABE1DA0073D3F2 /* idcard_kor_one.wgt */,
-			);
-			path = dat;
 			sourceTree = "<group>";
 		};
 		E6DAA4F125B813DF00564DB4 /* fds */ = {
@@ -559,109 +824,6 @@
 				E6DAA4FF25B8158600564DB4 /* Util.h */,
 			);
 			path = h;
-			sourceTree = "<group>";
-		};
-		E6F23E4025C7E15E003C8C00 /* SecureData */ = {
-			isa = PBXGroup;
-			children = (
-				E6F23E4125C7E166003C8C00 /* NSHCData.h */,
-				E6F23E4225C7E166003C8C00 /* ProtectedData.h */,
-				E6F23E4425C7E167003C8C00 /* SecureData.h */,
-				E6F23E4325C7E167003C8C00 /* Util.h */,
-			);
-			path = SecureData;
-			sourceTree = "<group>";
-		};
-		E6F23E4525C7E17A003C8C00 /* KeySharp */ = {
-			isa = PBXGroup;
-			children = (
-				E6F23E9A25C7E1CF003C8C00 /* BillViewController.h */,
-				E6F23E9125C7E1CA003C8C00 /* Certificate.h */,
-				E6F23E8D25C7E1C7003C8C00 /* CertManager.h */,
-				E6F23E9325C7E1CB003C8C00 /* CopyCertificate.h */,
-				E6F23E9425C7E1CC003C8C00 /* EasyJSDataFunction.h */,
-				E6F23E9225C7E1CA003C8C00 /* EasyJSWebView.h */,
-				E6F23E9925C7E1CF003C8C00 /* EasyJSWebViewProxyDelegate.h */,
-				E6F23E9625C7E1CD003C8C00 /* FMDatabase.h */,
-				E6F23E9525C7E1CC003C8C00 /* FMDatabaseAdditions.h */,
-				E6F23E8F25C7E1C8003C8C00 /* FMResultSet.h */,
-				E6F23E9825C7E1CE003C8C00 /* KeyChainManager.h */,
-				E6F23E8C25C7E1C6003C8C00 /* KS2Translator.h */,
-				E6F23E8E25C7E1C8003C8C00 /* KSCertManager.h */,
-				E6F23E9B25C7E1D0003C8C00 /* Logger.h */,
-				E6F23E9725C7E1CE003C8C00 /* NCCommon.h */,
-				E6F23E9025C7E1C9003C8C00 /* Util.h */,
-			);
-			path = KeySharp;
-			sourceTree = "<group>";
-		};
-		E6F23E4725C7E189003C8C00 /* crypto include */ = {
-			isa = PBXGroup;
-			children = (
-				E6F23E6425C7E1A1003C8C00 /* CertManager.h */,
-				E6F23E7C25C7E1B2003C8C00 /* kisaroot.ct */,
-				E6F23E7125C7E1A9003C8C00 /* KSaes.h */,
-				E6F23E4F25C7E196003C8C00 /* KSaesAlg.h */,
-				E6F23E5325C7E199003C8C00 /* KSaesApi.h */,
-				E6F23E5125C7E197003C8C00 /* KSaria.ct */,
-				E6F23E8525C7E1B9003C8C00 /* KSaria.h */,
-				E6F23E4D25C7E195003C8C00 /* KSasntypes.h */,
-				E6F23E4E25C7E195003C8C00 /* KSbase64.h */,
-				E6F23E5B25C7E19D003C8C00 /* KSbigint.h */,
-				E6F23E4C25C7E194003C8C00 /* KSbin.h */,
-				E6F23E7425C7E1AA003C8C00 /* KScbcmac.h */,
-				E6F23E4825C7E192003C8C00 /* KScert.h */,
-				E6F23E7925C7E1B0003C8C00 /* KScipher.h */,
-				E6F23E5E25C7E19E003C8C00 /* KSclient.h */,
-				E6F23E5825C7E19B003C8C00 /* KScmp.h */,
-				E6F23E6625C7E1A2003C8C00 /* KScmperr.h */,
-				E6F23E5725C7E19B003C8C00 /* KScmpproto.h */,
-				E6F23E6025C7E19F003C8C00 /* KScms.h */,
-				E6F23E7725C7E1AE003C8C00 /* KSdebug.h */,
-				E6F23E7B25C7E1B1003C8C00 /* KSdefine.h */,
-				E6F23E8225C7E1B6003C8C00 /* KSder.h */,
-				E6F23E6725C7E1A3003C8C00 /* KSdes.h */,
-				E6F23E6D25C7E1A7003C8C00 /* KSdessp.h */,
-				E6F23E6325C7E1A1003C8C00 /* KSdh.h */,
-				E6F23E7325C7E1AA003C8C00 /* KSerror.h */,
-				E6F23E7F25C7E1B4003C8C00 /* KShash.h */,
-				E6F23E6C25C7E1A6003C8C00 /* KShmac.h */,
-				E6F23E6A25C7E1A5003C8C00 /* KShsa.h */,
-				E6F23E8025C7E1B5003C8C00 /* KSHybridEnvelop.h */,
-				E6F23E7825C7E1AF003C8C00 /* KSkcdsa.h */,
-				E6F23E5D25C7E19E003C8C00 /* KSmd5.h */,
-				E6F23E5925C7E19C003C8C00 /* KSobigo.h */,
-				E6F23E6F25C7E1A8003C8C00 /* KSoid.h */,
-				E6F23E5C25C7E19D003C8C00 /* KSphash.h */,
-				E6F23E7625C7E1AE003C8C00 /* KSpkcs1.h */,
-				E6F23E4A25C7E193003C8C00 /* KSpkcs5.h */,
-				E6F23E5625C7E19A003C8C00 /* KSpkcs8.h */,
-				E6F23E5A25C7E19D003C8C00 /* KSpkcs8Util.h */,
-				E6F23E8125C7E1B5003C8C00 /* KSpkcs10.h */,
-				E6F23E6525C7E1A2003C8C00 /* KSpkcs12.h */,
-				E6F23E7A25C7E1B1003C8C00 /* KSprime.h */,
-				E6F23E6825C7E1A4003C8C00 /* KSprotocol.h */,
-				E6F23E6925C7E1A4003C8C00 /* KSrand.h */,
-				E6F23E5525C7E19A003C8C00 /* KSrc2.h */,
-				E6F23E5425C7E199003C8C00 /* KSrp.h */,
-				E6F23E4925C7E192003C8C00 /* KSseed.h */,
-				E6F23E6125C7E1A0003C8C00 /* KSsha.h */,
-				E6F23E7525C7E1AB003C8C00 /* KSsha256.h */,
-				E6F23E5025C7E197003C8C00 /* KSsock.h */,
-				E6F23E7D25C7E1B3003C8C00 /* KSsock.h_back.h */,
-				E6F23E6225C7E1A0003C8C00 /* KStcp.h */,
-				E6F23E6B25C7E1A6003C8C00 /* KStdes.h */,
-				E6F23E8425C7E1B8003C8C00 /* KSutil.h */,
-				E6F23E5F25C7E19F003C8C00 /* KSx509.h */,
-				E6F23E5225C7E198003C8C00 /* prime.h */,
-				E6F23E7225C7E1A9003C8C00 /* RA.h */,
-				E6F23E7E25C7E1B3003C8C00 /* signgate.ct */,
-				E6F23E8325C7E1B7003C8C00 /* signkr.ct */,
-				E6F23E4B25C7E194003C8C00 /* thread.h */,
-				E6F23E6E25C7E1A7003C8C00 /* xmca.ct */,
-				E6F23E7025C7E1A8003C8C00 /* yessign.ct */,
-			);
-			path = "crypto include";
 			sourceTree = "<group>";
 		};
 		F2E6DD7DE1BD394F2BA79383 /* Frameworks */ = {
@@ -737,24 +899,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6056A7325D5062400CD69C8 /* hang.rec in Resources */,
 				E667CAE125C5B252008C0EBB /* Pin.storyboard in Resources */,
 				E667CADA25C5B1B8008C0EBB /* Access.storyboard in Resources */,
-				E6F23E8A25C7E1B9003C8C00 /* signgate.ct in Resources */,
+				E6019F6425D6BA0B0020C064 /* Bio.storyboard in Resources */,
+				E6019F5E25D6B99D0020C064 /* Pattrun.storyboard in Resources */,
 				E61EA0A925AABCF200653273 /* LaunchScreen.storyboard in Resources */,
+				E6056AE025D5085700CD69C8 /* kisaroot.ct in Resources */,
+				E6056AE125D5085700CD69C8 /* xmca.ct in Resources */,
+				E6056ADF25D5085700CD69C8 /* signgate.ct in Resources */,
+				E6056B5E25D584EC00CD69C8 /* CertImport.storyboard in Resources */,
 				E61EA0A625AABCF200653273 /* Assets.xcassets in Resources */,
-				E6F23E8925C7E1B9003C8C00 /* kisaroot.ct in Resources */,
-				E6AF5AB825ABE1DA0073D3F2 /* idcard_kor_one.wgt in Resources */,
-				E6AF5AB925ABE1DA0073D3F2 /* asc.wgt in Resources */,
+				E6056A7225D5062400CD69C8 /* idcard_kor_one.wgt in Resources */,
+				E6019F3D25D6B09B0020C064 /* Ocr.storyboard in Resources */,
 				E61EA0EB25AAC37800653273 /* Splash.storyboard in Resources */,
+				E6056A7125D5062400CD69C8 /* asc.wgt in Resources */,
 				E6AF5B2D25AC09D70073D3F2 /* Test.storyboard in Resources */,
-				E6AF5ABA25ABE1DA0073D3F2 /* hang.rec in Resources */,
-				E6F23E8725C7E1B9003C8C00 /* xmca.ct in Resources */,
-				E6F23E8625C7E1B9003C8C00 /* KSaria.ct in Resources */,
+				E6056ADD25D5085700CD69C8 /* KSaria.ct in Resources */,
 				E667CAE925C5B3C7008C0EBB /* CertList.storyboard in Resources */,
 				E61EA0A425AABCF100653273 /* Main.storyboard in Resources */,
-				E6F23EA325C7E8A2003C8C00 /* SignKoreaFramework in Resources */,
-				E6F23E8B25C7E1B9003C8C00 /* signkr.ct in Resources */,
-				E6F23E8825C7E1B9003C8C00 /* yessign.ct in Resources */,
+				E6056ADE25D5085700CD69C8 /* signkr.ct in Resources */,
+				E6056AE225D5085700CD69C8 /* yessign.ct in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,6 +976,8 @@
 				E6AF5B5E25AC12970073D3F2 /* UIApplication.swift in Sources */,
 				E61EA0FF25AAC99600653273 /* TestVC.swift in Sources */,
 				E61EA0D825AAC12900653273 /* Configuration.swift in Sources */,
+				E6019F6225D6B9EB0020C064 /* BioVC.swift in Sources */,
+				E6019F3B25D6AFF30020C064 /* OcrVC.swift in Sources */,
 				E61EA0CD25AAC09A00653273 /* SplashVC.swift in Sources */,
 				E61EA0A125AABCF100653273 /* MainVC.swift in Sources */,
 				E667CADC25C5B1C9008C0EBB /* AccessVC.swift in Sources */,
@@ -818,11 +985,14 @@
 				E68D133525C5361E002CC473 /* SceneCoordinator.swift in Sources */,
 				E6DAA4FA25B8150E00564DB4 /* KeychainItemWrapper.m in Sources */,
 				E61EA0E025AAC24600653273 /* Appdata.swift in Sources */,
+				E6056A6325D5048C00CD69C8 /* Constants.swift in Sources */,
+				E6056B5C25D584D100CD69C8 /* CertImportVC.swift in Sources */,
 				E61EA09D25AABCF100653273 /* AppDelegate.swift in Sources */,
 				E6AF5B5C25AC11AE0073D3F2 /* StoryboardHelper.swift in Sources */,
 				E667CAE725C5B3B9008C0EBB /* CertListVC.swift in Sources */,
+				E6019F6025D6B9A90020C064 /* PattrunVC.swift in Sources */,
 				E61EA0E325AAC24900653273 /* NativeBridge.swift in Sources */,
-				E6F23E9D25C7E1EC003C8C00 /* Constants.swift in Sources */,
+				E6019F3625D664780020C064 /* CertListCell.swift in Sources */,
 				E667CAE325C5B25E008C0EBB /* PinVC.swift in Sources */,
 				E61EA0D925AAC12900653273 /* String.swift in Sources */,
 				E61EA09F25AABCF100653273 /* SceneDelegate.swift in Sources */,
@@ -903,7 +1073,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -958,7 +1128,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -975,13 +1145,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = C948P7X2WC;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/face_ocr",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/eightbyte",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/FaceSystem",
 				);
 				INFOPLIST_FILE = SMART_SB_APP_IOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -993,10 +1166,20 @@
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/cert/lib",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/fds",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/FingerprintCertManager\\ lib",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/FingerprintCertManager\\ lib",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/SecureData\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/KeySharpiPhoneICRP\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/KeySharpiPhoneUtil\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/KeySharpiPhone\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/KeySharpiPhone\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/KeySharpiPhoneICRP\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/SecureData\\ lib/Release-iphoneos",
 				);
 				NEW_SETTING = "";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.smartbank.app;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.smartSB.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SMART_SB_Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1012,13 +1195,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = C948P7X2WC;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/face_ocr",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/eightbyte",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/FaceSystem",
 				);
 				INFOPLIST_FILE = SMART_SB_APP_IOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1030,10 +1216,20 @@
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/cert/lib",
 					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/fds",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/FingerprintCertManager\\ lib",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/FingerprintCertManager\\ lib",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/SecureData\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/KeySharpiPhoneICRP\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/KeySharpiPhoneUtil\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/KeySharpiPhone\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/KeySharpiPhone\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/KeySharpiPhoneICRP\\ lib/Release-iphoneos",
+					"$(PROJECT_DIR)/SMART_SB_APP_IOS/Lib/Koscom/lib/SecureData\\ lib/Release-iphoneos",
 				);
 				NEW_SETTING = "";
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.smartbank.app;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.smartSB.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SMART_SB_Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

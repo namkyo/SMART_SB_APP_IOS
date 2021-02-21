@@ -26,10 +26,6 @@ class Configuration {
     
     
     
-    static let JS_TO_SWIFT = "postMessage()"
-    
-    static let JS_TO_SWIFT_METHOD = ["callbackHandler"]
-    
     
     static let URL="URL"
     

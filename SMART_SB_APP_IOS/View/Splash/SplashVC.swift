@@ -13,14 +13,9 @@ class SplashVC: UIViewController {
         super.viewDidLoad()
         Log.print("SplashVC viewDidLoad")
         self.navigationController?.navigationBar.isHidden = true
-        if(Configuration.OPER_DEV_YN){
-            UserDefaults.standard.set(Configuration.OPER_URL, forKey: Configuration.URL)
-        }else{
-            UserDefaults.standard.set(Configuration.DEV_URL, forKey: Configuration.URL)
-        }
+        
         //setView()
         //Function.showAlert(vc: self, title: "알림", message: "테스트", actionTitle: "확인")
-        
         
     }
     
@@ -28,8 +23,9 @@ class SplashVC: UIViewController {
         super.viewDidAppear(true)
         Log.print("SplashVC viewDidAppear")
         //대기시간
-        sleep(4)
-        SceneCoordinator().transition(to: "Test", using: .root, animated: false)
+        sleep(3)
+        //메인화면 이동
+        SceneCoordinator().transition(to: "Main", using: .root, animated: false)
     }
     
     

@@ -9,6 +9,19 @@ import Foundation
 
 enum Constants {
     
+    static let  MODE: String = "H"
+    
+    enum PageUrl{
+        static let  WEB_MAIN_H: String = "http://210.221.92.125:8082/"
+        static let  WEB_MAIN_D: String = "http://172.17.171.1:8010/"
+        static let  WEB_MAIN_R: String = "http://172.17.171.1:8010/"
+
+        static let  WEB_MAIN_VIEW: String = "main.view"
+        static let  WEB_SIGN_UP: String = "cbm00200p.frm"
+        static let  WEB_ERROR: String = "error.html"
+    }
+    
+    
     /**
      *  키보드보안 키값
      */
@@ -32,6 +45,13 @@ enum Constants {
     enum Scraping {
         static let KEY = "" // "FT3456789JT23456"
         static let IV = ""  // "FT87654321JT4321"
+    }
+    /**
+     *  앱데이터 요청 작업구분 코드
+     */
+    enum AppData {
+        static let C = "C"
+        static let R = "R"
     }
     
     /**

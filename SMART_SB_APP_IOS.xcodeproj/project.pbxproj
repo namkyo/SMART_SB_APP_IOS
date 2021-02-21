@@ -33,10 +33,23 @@
 		E6056AFD25D5108F00CD69C8 /* libKeySharpiPhoneICRP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6056AEE25D5087500CD69C8 /* libKeySharpiPhoneICRP.a */; };
 		E6056AFE25D5109C00CD69C8 /* libSecureData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6056AEB25D5087500CD69C8 /* libSecureData.a */; };
 		E6056B0825D5525100CD69C8 /* PACECaptureNRecog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6056A7425D5062700CD69C8 /* PACECaptureNRecog.framework */; };
-		E6056B0D25D56C5A00CD69C8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F23E9E25C7E883003C8C00 /* Security.framework */; };
 		E6056B1D25D56F1000CD69C8 /* libSecuLogMaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DAA4F425B8140800564DB4 /* libSecuLogMaster.a */; };
 		E6056B5C25D584D100CD69C8 /* CertImportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6056B5B25D584D100CD69C8 /* CertImportVC.swift */; };
 		E6056B5E25D584EC00CD69C8 /* CertImport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6056B5D25D584EC00CD69C8 /* CertImport.storyboard */; };
+		E61CB20925E104C200A8944A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F23E9E25C7E883003C8C00 /* Security.framework */; };
+		E61CB23425E1063900A8944A /* Safetoken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61CB23025E1061900A8944A /* Safetoken.framework */; };
+		E61CB23525E1063900A8944A /* Safetoken.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61CB23025E1061900A8944A /* Safetoken.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E61CB23625E1063A00A8944A /* SafetokenBiometric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61CB22E25E1061800A8944A /* SafetokenBiometric.framework */; };
+		E61CB23725E1063A00A8944A /* SafetokenBiometric.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61CB22E25E1061800A8944A /* SafetokenBiometric.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E61CB23825E1063B00A8944A /* SafetokenPattern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E61CB22F25E1061800A8944A /* SafetokenPattern.framework */; };
+		E61CB23925E1063B00A8944A /* SafetokenPattern.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E61CB22F25E1061800A8944A /* SafetokenPattern.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E61CB23C25E12B4800A8944A /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61CB23B25E12B4800A8944A /* IndicatorView.swift */; };
+		E61CB23F25E12C8A00A8944A /* progress_loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = E61CB23E25E12C8A00A8944A /* progress_loading.gif */; };
+		E61CB24725E12CF000A8944A /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61CB24125E12CEF00A8944A /* Dictionary.swift */; };
+		E61CB24825E12CF000A8944A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61CB24225E12CEF00A8944A /* Color.swift */; };
+		E61CB24B25E12CF000A8944A /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61CB24525E12CF000A8944A /* UIImage.swift */; };
+		E61CB24C25E12CF000A8944A /* NSMutableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61CB24625E12CF000A8944A /* NSMutableData.swift */; };
+		E61CB24E25E12D7900A8944A /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61CB24D25E12D7900A8944A /* WebService.swift */; };
 		E61EA09D25AABCF100653273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA09C25AABCF100653273 /* AppDelegate.swift */; };
 		E61EA09F25AABCF100653273 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA09E25AABCF100653273 /* SceneDelegate.swift */; };
 		E61EA0A125AABCF100653273 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61EA0A025AABCF100653273 /* MainVC.swift */; };
@@ -73,7 +86,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E61CB23525E1063900A8944A /* Safetoken.framework in Embed Frameworks */,
 				E6056A7A25D506E700CD69C8 /* Pods_SMART_SB_APP_IOS.framework in Embed Frameworks */,
+				E61CB23725E1063A00A8944A /* SafetokenBiometric.framework in Embed Frameworks */,
+				E61CB23925E1063B00A8944A /* SafetokenPattern.framework in Embed Frameworks */,
 				E6056A7625D5065A00CD69C8 /* PACECaptureNRecog.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -190,11 +206,23 @@
 		E6056AEE25D5087500CD69C8 /* libKeySharpiPhoneICRP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libKeySharpiPhoneICRP.a; sourceTree = "<group>"; };
 		E6056AF125D5087500CD69C8 /* libKeySharpiPhoneUtil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libKeySharpiPhoneUtil.a; sourceTree = "<group>"; };
 		E6056AF425D5087500CD69C8 /* libKeySharpiPhone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libKeySharpiPhone.a; sourceTree = "<group>"; };
-		E6056AFF25D511BE00CD69C8 /* SafetokenBiometric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafetokenBiometric.framework; path = "../../../../../../Desktop/스마트솔루션/2. 사설인증-에잇바이트/x8byte-safetoken_v3_2_1_20201231_SMARTSB/03. iOS/SafetokenBiometric.framework"; sourceTree = "<group>"; };
-		E6056B0025D511BE00CD69C8 /* SafetokenPattern.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafetokenPattern.framework; path = "../../../../../../Desktop/스마트솔루션/2. 사설인증-에잇바이트/x8byte-safetoken_v3_2_1_20201231_SMARTSB/03. iOS/SafetokenPattern.framework"; sourceTree = "<group>"; };
-		E6056B0125D511BF00CD69C8 /* Safetoken.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Safetoken.framework; path = "../../../../../../Desktop/스마트솔루션/2. 사설인증-에잇바이트/x8byte-safetoken_v3_2_1_20201231_SMARTSB/03. iOS/Safetoken.framework"; sourceTree = "<group>"; };
 		E6056B5B25D584D100CD69C8 /* CertImportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertImportVC.swift; sourceTree = "<group>"; };
 		E6056B5D25D584EC00CD69C8 /* CertImport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CertImport.storyboard; sourceTree = "<group>"; };
+		E61CB1FD25E1040700A8944A /* CertListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CertListVC.h; sourceTree = "<group>"; };
+		E61CB1FE25E1040800A8944A /* ManageCertVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManageCertVC.h; sourceTree = "<group>"; };
+		E61CB1FF25E1040800A8944A /* SelfVerifyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfVerifyVC.h; sourceTree = "<group>"; };
+		E61CB20025E1040800A8944A /* CheckPasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckPasswordVC.h; sourceTree = "<group>"; };
+		E61CB20125E1040800A8944A /* ChangePasswordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangePasswordVC.h; sourceTree = "<group>"; };
+		E61CB22E25E1061800A8944A /* SafetokenBiometric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SafetokenBiometric.framework; sourceTree = "<group>"; };
+		E61CB22F25E1061800A8944A /* SafetokenPattern.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SafetokenPattern.framework; sourceTree = "<group>"; };
+		E61CB23025E1061900A8944A /* Safetoken.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Safetoken.framework; sourceTree = "<group>"; };
+		E61CB23B25E12B4800A8944A /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		E61CB23E25E12C8A00A8944A /* progress_loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = progress_loading.gif; sourceTree = "<group>"; };
+		E61CB24125E12CEF00A8944A /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		E61CB24225E12CEF00A8944A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E61CB24525E12CF000A8944A /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		E61CB24625E12CF000A8944A /* NSMutableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableData.swift; sourceTree = "<group>"; };
+		E61CB24D25E12D7900A8944A /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		E61EA09925AABCF100653273 /* SMART_SB_APP_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMART_SB_APP_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61EA09C25AABCF100653273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E61EA09E25AABCF100653273 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -265,14 +293,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6056B0D25D56C5A00CD69C8 /* Security.framework in Frameworks */,
 				E6056A7B25D506EE00CD69C8 /* AVFoundation.framework in Frameworks */,
 				E6056B0825D5525100CD69C8 /* PACECaptureNRecog.framework in Frameworks */,
+				E61CB23625E1063A00A8944A /* SafetokenBiometric.framework in Frameworks */,
 				E6056AFD25D5108F00CD69C8 /* libKeySharpiPhoneICRP.a in Frameworks */,
+				E61CB23425E1063900A8944A /* Safetoken.framework in Frameworks */,
 				E6056B1D25D56F1000CD69C8 /* libSecuLogMaster.a in Frameworks */,
 				E6019F3825D6AFCF0020C064 /* CoreVideo.framework in Frameworks */,
 				E6056AFC25D5108B00CD69C8 /* libKeySharpiPhone.a in Frameworks */,
+				E61CB23825E1063B00A8944A /* SafetokenPattern.framework in Frameworks */,
 				E6056AFE25D5109C00CD69C8 /* libSecureData.a in Frameworks */,
+				E61CB20925E104C200A8944A /* Security.framework in Frameworks */,
 				E6056A7925D506E700CD69C8 /* Pods_SMART_SB_APP_IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +368,11 @@
 		E6056A7F25D507F300CD69C8 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				E61CB1FD25E1040700A8944A /* CertListVC.h */,
+				E61CB20125E1040800A8944A /* ChangePasswordVC.h */,
+				E61CB20025E1040800A8944A /* CheckPasswordVC.h */,
+				E61CB1FE25E1040800A8944A /* ManageCertVC.h */,
+				E61CB1FF25E1040800A8944A /* SelfVerifyVC.h */,
 				E6056A8325D5081400CD69C8 /* SecureData include */,
 				E6056A8225D5080D00CD69C8 /* KeySharpiPhoneUtil include */,
 				E6056A8125D5080600CD69C8 /* KeySharpiPhoneICRP include */,
@@ -578,6 +614,34 @@
 			path = Import;
 			sourceTree = "<group>";
 		};
+		E61CB23A25E12B2000A8944A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E61CB23D25E12B5400A8944A /* Indicator */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E61CB23D25E12B5400A8944A /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				E61CB23E25E12C8A00A8944A /* progress_loading.gif */,
+				E61CB23B25E12B4800A8944A /* IndicatorView.swift */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
+		E61CB24025E12CC700A8944A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E61CB24225E12CEF00A8944A /* Color.swift */,
+				E61CB24125E12CEF00A8944A /* Dictionary.swift */,
+				E61CB24625E12CF000A8944A /* NSMutableData.swift */,
+				E61CB24525E12CF000A8944A /* UIImage.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		E61EA09025AABCF000653273 = {
 			isa = PBXGroup;
 			children = (
@@ -600,6 +664,7 @@
 		E61EA09B25AABCF100653273 /* SMART_SB_APP_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				E61CB24025E12CC700A8944A /* Core */,
 				E61EA0EE25AAC4B500653273 /* ETC */,
 				E61EA0E625AAC27A00653273 /* Service */,
 				E61EA0CA25AAC01100653273 /* View */,
@@ -658,6 +723,7 @@
 		E61EA0E625AAC27A00653273 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E61CB24D25E12D7900A8944A /* WebService.swift */,
 				E61EA0DF25AAC24600653273 /* Appdata.swift */,
 				E61EA0E225AAC24900653273 /* NativeBridge.swift */,
 			);
@@ -685,6 +751,7 @@
 		E61EA0EE25AAC4B500653273 /* ETC */ = {
 			isa = PBXGroup;
 			children = (
+				E61CB23A25E12B2000A8944A /* View */,
 				E68D133425C5361E002CC473 /* SceneCoordinator.swift */,
 				E68D133625C5382D002CC473 /* Log.swift */,
 			);
@@ -742,9 +809,9 @@
 		E61EA12C25AB113300653273 /* eightbyte */ = {
 			isa = PBXGroup;
 			children = (
-				E6056B0125D511BF00CD69C8 /* Safetoken.framework */,
-				E6056AFF25D511BE00CD69C8 /* SafetokenBiometric.framework */,
-				E6056B0025D511BE00CD69C8 /* SafetokenPattern.framework */,
+				E61CB23025E1061900A8944A /* Safetoken.framework */,
+				E61CB22E25E1061800A8944A /* SafetokenBiometric.framework */,
+				E61CB22F25E1061800A8944A /* SafetokenPattern.framework */,
 			);
 			path = eightbyte;
 			sourceTree = "<group>";
@@ -913,6 +980,7 @@
 				E6056A7225D5062400CD69C8 /* idcard_kor_one.wgt in Resources */,
 				E6019F3D25D6B09B0020C064 /* Ocr.storyboard in Resources */,
 				E61EA0EB25AAC37800653273 /* Splash.storyboard in Resources */,
+				E61CB23F25E12C8A00A8944A /* progress_loading.gif in Resources */,
 				E6056A7125D5062400CD69C8 /* asc.wgt in Resources */,
 				E6AF5B2D25AC09D70073D3F2 /* Test.storyboard in Resources */,
 				E6056ADD25D5085700CD69C8 /* KSaria.ct in Resources */,
@@ -977,17 +1045,23 @@
 				E61EA0FF25AAC99600653273 /* TestVC.swift in Sources */,
 				E61EA0D825AAC12900653273 /* Configuration.swift in Sources */,
 				E6019F6225D6B9EB0020C064 /* BioVC.swift in Sources */,
+				E61CB24725E12CF000A8944A /* Dictionary.swift in Sources */,
 				E6019F3B25D6AFF30020C064 /* OcrVC.swift in Sources */,
 				E61EA0CD25AAC09A00653273 /* SplashVC.swift in Sources */,
 				E61EA0A125AABCF100653273 /* MainVC.swift in Sources */,
+				E61CB24825E12CF000A8944A /* Color.swift in Sources */,
 				E667CADC25C5B1C9008C0EBB /* AccessVC.swift in Sources */,
 				E68D133725C5382D002CC473 /* Log.swift in Sources */,
+				E61CB24B25E12CF000A8944A /* UIImage.swift in Sources */,
 				E68D133525C5361E002CC473 /* SceneCoordinator.swift in Sources */,
 				E6DAA4FA25B8150E00564DB4 /* KeychainItemWrapper.m in Sources */,
 				E61EA0E025AAC24600653273 /* Appdata.swift in Sources */,
 				E6056A6325D5048C00CD69C8 /* Constants.swift in Sources */,
+				E61CB24E25E12D7900A8944A /* WebService.swift in Sources */,
 				E6056B5C25D584D100CD69C8 /* CertImportVC.swift in Sources */,
+				E61CB24C25E12CF000A8944A /* NSMutableData.swift in Sources */,
 				E61EA09D25AABCF100653273 /* AppDelegate.swift in Sources */,
+				E61CB23C25E12B4800A8944A /* IndicatorView.swift in Sources */,
 				E6AF5B5C25AC11AE0073D3F2 /* StoryboardHelper.swift in Sources */,
 				E667CAE725C5B3B9008C0EBB /* CertListVC.swift in Sources */,
 				E6019F6025D6B9A90020C064 /* PattrunVC.swift in Sources */,

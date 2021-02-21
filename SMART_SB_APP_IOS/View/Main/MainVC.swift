@@ -28,13 +28,13 @@ class MainVC: UIViewController{
         super.loadView()
         let contentController = WKUserContentController()
         let config = WKWebViewConfiguration()
-        let userScript = WKUserScript(source: Configuration.JS_TO_SWIFT, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        let userScript = WKUserScript(source: "postMessage()", injectionTime: .atDocumentEnd, forMainFrameOnly: true)
         contentController.addUserScript(userScript)
+
         let preferences = WKPreferences()
         preferences.javaScriptCanOpenWindowsAutomatically = true
-        for jsMethod in Configuration.JS_TO_SWIFT_METHOD{
-            contentController.add(self, name: jsMethod)
-        }
+
+        contentController.add(self, name: "callbackHandler")
         config.userContentController = contentController
         config.preferences = preferences
         webView = WKWebView(frame: self.view.frame, configuration: config)
@@ -57,8 +57,20 @@ class MainVC: UIViewController{
            // self.webView.load(request)
         }
         
-        let url = URL(string: (Configuration.DEV_URL+Configuration.MAIN_VIEW_URL))
-        let request = URLRequest(url: url!)
+        var urlString = ""
+        
+        switch Constants.MODE {
+        case "R":
+            urlString=Constants.PageUrl.WEB_MAIN_R+Configuration.MAIN_VIEW_URL
+        case "D":
+            urlString=Constants.PageUrl.WEB_MAIN_D+Configuration.MAIN_VIEW_URL
+        case "H":
+            urlString=Constants.PageUrl.WEB_MAIN_H+Configuration.MAIN_VIEW_URL
+        default:
+            Log.print(message: "유효하지 않은 접속")
+        }
+        
+        let request = URLRequest(url: URL(string: urlString)!)
         //웹뷰 url셋팅
         self.webView.load(request)
     }
@@ -103,7 +115,82 @@ class MainVC: UIViewController{
 extension MainVC: WKScriptMessageHandler {
     //웹뷰에서 요청
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        NativeBridge().bridge(didReceive:message)
+        if message.name == "callbackHandler" {
+            guard let dictionary: [String: Any] = message.body as? Dictionary else {
+                Log.print(message: "json String Error")
+                return
+            }
+            
+            let sf = dictionary["SF"] as Any
+            let ff = dictionary["FF"] as Any
+            
+            if let jsonString = dictionary["DATA"] as? String{
+                let jsonData = jsonString.data(using: .utf8)!
+                let dicData = try? JSONSerialization.jsonObject(with: jsonData, options: .mutableLeaves)
+            
+                if let reVal: [String: Any] = dicData as? Dictionary {
+                    guard let serviceCd = reVal["serviceCd"] as? String else {
+                        Log.print(message: "serviceCd nil")
+                        return
+                    }
+                    Log.print(message: "native serviceCd : " + serviceCd)
+                    
+                    guard let params = reVal["params"] as? [String: String] else {
+                        Log.print(message: "params error")
+                        return
+                    }
+                    Log.print(message: "native params : " + params.description)
+                    
+                    switch serviceCd {
+                        case Constants.ServiceCode.AUTHORIZATION:
+                            Log.print(message: "AUTHORIZATION ")
+                            break
+                        case Constants.ServiceCode.TRANSKEY:
+                            Log.print(message: "TRANSKEY ")
+                            break
+                        case Constants.ServiceCode.OCR:
+                            Log.print(message: "OCR ")
+                            SceneCoordinator().transition(to: "Ocr", using: .modal, animated: false)
+                            break
+                        case Constants.ServiceCode.SIGN_CERT_MANAGE:
+                            Log.print(message: "SIGN_CERT_MANAGE ")
+                            break
+                        case Constants.ServiceCode.SIGN_CERT:
+                            Log.print(message: "SIGN_CERT ")
+                            break
+                        case Constants.ServiceCode.CALENDAR:
+                            Log.print(message: "CALENDAR ")
+                            break
+                        case Constants.ServiceCode.SCRAPING:
+                            Log.print(message: "SCRAPING ")
+                            break
+                        case Constants.ServiceCode.APP_DATA:
+                            Log.print(message: "APP_DATA ")
+                            Appdata().appData(params: reVal["params"] as! Dictionary<String, Any>)
+                            break
+                        case Constants.ServiceCode.APP_LINK:
+                            Log.print(message: "APP_LINK ")
+                            break
+                        case Constants.ServiceCode.WEB_LINK:
+                            Log.print(message: "WEB_LINK ")
+                            break
+                        case Constants.ServiceCode.GET_ADID:
+                            Log.print(message: "GET_ADID ")
+                            break
+                        case Constants.ServiceCode.LOADING:
+                            Log.print(message: "LOADING ")
+                            break
+                        case Constants.ServiceCode.APP_CLOSE:
+                            Log.print(message: "APP_CLOSE ")
+                            exit(0)
+                            break
+                        default:
+                            Log.print(message: "default ")
+                            break
+                    }
+                }
+            }
+        }
     }
 }
 
